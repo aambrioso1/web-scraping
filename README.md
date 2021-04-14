@@ -6,7 +6,7 @@ web_scraper
 This program grabs the description and stuff toy images from the website:
 https://www.mercari.com/us/item/m45786125605/
 and posts them to the host computer's hard drive in folders called description
-and images respectively.    The program also prints the URL for the images
+and images respectively.    The program also prints the URLs for the images
 that are downloaded by it.
 
 It requires two modules that are not built-in: requests and beautiful soup.
