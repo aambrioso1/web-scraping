@@ -4,15 +4,16 @@ A repository for experiments in web-scraping.
 web_scraper
 ***********************************************************************
 
-Usage:  web_scraper <URL>
-If no URL is give then it uses: https://www.mercari.com/us/item/m45786125605/
+Usage:  web_scraper optional <URL> optional: <dirName>
+If URL and dirName are both missing https://www.mercari.com/us/item/m45786125605/ and /temp are used.
+If the dirName is missing then /temp is used.
 If a bad URL is given the program exits with the message:  
 HTTP response status:  <status code>
-
+if only a dirName is given then likely the program will exit with an HTTP response status unless
+the dirName happens to be a URL.
 
 This program grabs the description and stuff toy images from URL for www.mercari.com
-and posts them to the host computer's hard drive in folders called /description
-and /images respectively.    The program also prints the current working directory 
+and posts them to the host computer's hard drive in a folder called dirname.    The program also prints the current working directory 
 and the the URLs for the images that are downloaded.
 
 It requires two modules that are not built-in: requests and beautiful soup.

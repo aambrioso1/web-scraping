@@ -1,36 +1,37 @@
-import requests, os, bs4, sys
+"""
+A web-scraping program for the www.mercari.com website.
+See the README file in GitHub for more information:
+https://github.com/aambrioso1/web-scraping/blob/master/README.md
+"""
 
-print('\n', 50*'*')
+import os, sys, requests, bs4 # requests and bs4 are not built-in modules
+
+print(50*'*')
 print(f'The working directory is: {os.getcwd()}')
 print(50*'*', '\n')
-# print('\n')
 
 url = 'https://www.mercari.com/us/item/m45786125605/'
+arg_len = len(sys.argv)
+
+if arg_len == 1:
+	url = 'https://www.mercari.com/us/item/m45786125605/'
+	dirName = 'temp'
+elif arg_len == 2:
+	url = sys.argv[1]
+	dirName = 'temp'
+elif arg_len == 3:
+	url = sys.argv[1]
+	dirName = sys.argv[2]
+else:
+	# Exit with message that there are twoo many arguments
+	raise SystemExit(f'Too many arguments') 
 
 """
 For information on the need for the headers see:
 https://stackoverflow.com/questions/38489386/python-requests-403-forbidden#:~:text=If%20you%20still%20get%20a,Headers%20of%20the%20Developer%20Tools.
 """
-
-"""
-# One way to check of arguments
-try:
-    arg = sys.argv[1]
-except IndexError:
-    raise SystemExit(f"Usage: {sys.argv[0]} <URL>")
-"""
-
-if len(sys.argv) == 1:
-	url = 'https://www.mercari.com/us/item/m45786125605/'
-else:
-	url = sys.argv[1]
-
-
-
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 res = requests.get(url, headers=headers)
-
-
 
 
 if res.status_code == 404:
@@ -38,7 +39,6 @@ if res.status_code == 404:
 
 
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
-
 
 img_list = []
 for link in soup.find_all('img'):
@@ -48,48 +48,38 @@ for link in soup.find_all('img'):
 print(50*'*')
 for i, url in enumerate(img_list):
 	print(f'for image{i+1} the url is {url}')
+print(50*'*','\n')
+
+print(50*'*')
+try:
+    # Create the directory dirName
+    os.mkdir(dirName)
+    print(f'Directory {dirName} created for storing info') 
+except FileExistsError:
+    print(f'Directory {dirName} already exists')
 print(50*'*')
 
+# We iterate through the image list and save each image in the dirName folder as image1.jpg, image2.jpg, ...
 for i, url in enumerate(img_list):
 	res = requests.get(url)
 	res.raise_for_status
-	# This code was borrowed from Automate the Boring Stuff.  May want to refactor using a with statement.
-	file = open('images/image' + str(i+1) + '.jpg','wb')
-	for chunk in res.iter_content(100000):
-		file.write(chunk)
+	# This idea for downloading and image was borrowed from Automate the Boring Stuff.  See README file.
+	with open(f'{dirName}/image' + str(i+1) + '.jpg','wb') as file:
+		for chunk in res.iter_content(100000):
+			file.write(chunk)
 
-	file.close()
-
+# We save the description in the dirName folder as description.txt
 description = soup.find(property="og:description").get('content')
-
-with open('description/description.txt', 'w') as writer:
+with open(f'{dirName}/description.txt', 'w') as writer:
     writer.write(description)
 
-
+"""
 # url = 'https://mercari-images.global.ssl.fastly.net/photos/m45786125605_1.jpg?1617507386'
 
-# Prints a long, but readable, version of the web page.   
-# Please create this document as a text file and send it to me.
+# The prettify command prints a long, but readable, version of the web page.   
 # print(soup.prettify())
 
-# Had to dig through div tags using the inspector for a while before I found the right one.
-"""
-text_tag = '#__next > div.Flex-ych44r-0.Space-cutht5-0.Container-sc-9aa7mx-0.ieZXaq.' \
-    'Layout__HeaderPlaceholder-sc-113qaek-3.dUbAPb > div.BodyContainer__ResponsiveContainer' \
-    '-sc-1iymb8v-2.ItemDesktop__BodyWrapper-sc-1yqibs5-0.bMJlQC > div:nth-child(2) > ' \
-    'div.Flex-ych44r-0.Space-cutht5-0.Container-sc-9aa7mx-0.ItemDesktop__RightColumn-sc-1yqibs5-2.byDGRF > ' \
-    'div.Section-sc-694wzh-0.eymcbl > div > p.Text-uqn6ov-0.Text__T2-uqn6ov-10.Spec__Description-sc-1oxis5o-6.jyCFdx'
-text_tag2 = ''
-
-text = soup.select(text_tag)
-text_string = str(text)
-
-if text == []:
-        print('Could not find text.')
-else:
-    print(f'text is {text}')
-    with open('erika_file', 'w') as writer:
-    	writer.write(soup.prettify())
+# Read through html tags using the inspector in Chrome for a while before I found the right one.
 
 # print(soup.title)
 # print("meta stuff", soup.find_all(property="og:image"))
@@ -117,10 +107,7 @@ for i, url in enumerate(url_list):
 # Prints out a the p tag stuff
 for stuff in soup.find_all('p'):
 	print(stuff.get('class'))  # "Text-uqn6ov-0 Text__T2-uqn6ov-10 Spec__Description-sc-1oxis5o-6 jyCFdx"
-"""
 
-
-"""
 This is code I wrote to try to figure out the best way to pull the info from the html
 for i, text in enumerate(soup.find_all('meta')):
 	print(i+1, text.get('property'))
