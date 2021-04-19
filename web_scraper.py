@@ -14,7 +14,7 @@ print(50*'*', '\n')
 
 # These are the identifcation numbers found on the item urls. 
 # For example:  https://www.mercari.com/us/item/m45786125605/
-url_num_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
+url_id_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
 '58539546254', '93471915373', '86489594490', '15676221375', \
 '92171004209', '59767956548', '20674928323', '89789051188', \
 '61995288639', '80927475884', '96337524430', '56981262426', \
@@ -22,9 +22,9 @@ url_num_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
 '11255445596', '52302814025', '32005985260', '66680840842']
 
 FILE_NUM = int(sys.argv[1])
-URL_NUM = url_num_list[FILE_NUM]
+URL_ID = url_id_list[FILE_NUM]
 
-url = f'https://www.mercari.com/us/item/m{URL_NUM}/'
+url = f'https://www.mercari.com/us/item/m{URL_ID}/'
 dir_name = f'temp{FILE_NUM}'
 
 """
