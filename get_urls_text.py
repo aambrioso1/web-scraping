@@ -7,8 +7,8 @@ import os, sys, requests, bs4
 
 print(f"{sys.argv=}")
 
-foldername = sys
-url = sys.argv[1].argv[2]
+url = sys.argv[1]
+foldername = sys.argv[2]
 filename = sys.argv[3]
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
