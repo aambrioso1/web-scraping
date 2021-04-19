@@ -2,6 +2,8 @@
 A web-scraping program for the www.mercari.com website.
 See the README file in GitHub for more information:
 https://github.com/aambrioso1/web-scraping/blob/master/README.md
+
+usage:  python web_scraper.py FILE_NUM
 """
 
 import os, sys, requests, bs4 # requests and bs4 are not built-in modules
@@ -10,21 +12,20 @@ print(50*'*')
 print(f'The working directory is: {os.getcwd()}')
 print(50*'*', '\n')
 
-url = 'https://www.mercari.com/us/item/m45786125605/'
-arg_len = len(sys.argv)
+# These are the identifcation numbers found on the item urls. 
+# For example:  https://www.mercari.com/us/item/m45786125605/
+url_num_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
+'58539546254', '93471915373', '86489594490', '15676221375', \
+'92171004209', '59767956548', '20674928323', '89789051188', \
+'61995288639', '80927475884', '96337524430', '56981262426', \
+'96138398649', '60372706574', '12850962109', '20217064707', \
+'11255445596', '52302814025', '32005985260', '66680840842']
 
-if arg_len == 1:
-	url = 'https://www.mercari.com/us/item/m45786125605/'
-	dirName = 'temp'
-elif arg_len == 2:
-	url = sys.argv[1]
-	dirName = 'temp'
-elif arg_len == 3:
-	url = sys.argv[1]
-	dirName = sys.argv[2]
-else:
-	# Exit with message that there are twoo many arguments
-	raise SystemExit(f'Too many arguments') 
+FILE_NUM = int(sys.argv[1])
+URL_NUM = url_num_list[FILE_NUM]
+
+url = f'https://www.mercari.com/us/item/m{URL_NUM}/'
+dir_name = f'temp{FILE_NUM}'
 
 """
 For information on the need for the headers see:
@@ -52,25 +53,25 @@ print(50*'*','\n')
 
 print(50*'*')
 try:
-    # Create the directory dirName
-    os.mkdir(dirName)
-    print(f'Directory {dirName} created for storing info') 
+    # Create the directory dir_name
+    os.mkdir(dir_name)
+    print(f'Directory {dir_name} created for storing info') 
 except FileExistsError:
-    print(f'Directory {dirName} already exists')
+    print(f'Directory {dir_name} already exists')
 print(50*'*')
 
-# We iterate through the image list and save each image in the dirName folder as image1.jpg, image2.jpg, ...
+# We iterate through the image list and save each image in the dir_name folder as image1.jpg, image2.jpg, ...
 for i, url in enumerate(img_list):
 	res = requests.get(url)
 	res.raise_for_status
 	# This idea for downloading and image was borrowed from Automate the Boring Stuff.  See README file.
-	with open(f'{dirName}/image' + str(i+1) + '.jpg','wb') as file:
+	with open(f'{dir_name}/image' + str(i+1) + '.jpg','wb') as file:
 		for chunk in res.iter_content(100000):
 			file.write(chunk)
 
-# We save the description in the dirName folder as description.txt
+# We save the description in the dir_name folder as description.txt
 description = soup.find(property="og:description").get('content')
-with open(f'{dirName}/description.txt', 'w') as writer:
+with open(f'{dir_name}/description.txt', 'w') as writer:
     writer.write(description)
 
 """
@@ -118,4 +119,12 @@ for text in soup.find_all('meta'):
 	if text.get('property')  == 'og:description':
 		description = text.get('content')
 		print(description)
+"""
+"""
+['94962627845', '28581050712', '45786125605', '59686343331', 
+'58539546254', '93471915373', '86489594490', '15676221375', 
+'92171004209', '59767956548', '20674928323', '89789051188', 
+'61995288639', '80927475884', '96337524430', '56981262426', 
+'96138398649', '60372706574', '12850962109', '20217064707', 
+'11255445596', '52302814025', '32005985260', '66680840842']
 """
