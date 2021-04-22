@@ -1,10 +1,9 @@
 # web-scraping
 A repository for experiments in web-scraping.
 
-web_scraper
+*web_scraper*
 Usage:  web_scraper <FILE_NUM> 
 ***********************************************************************
-
 The script goes to  https://www.mercari.com/us/item/m{URL_NUM}/ downloads the merchandise
 decription text and all the images into the folder called /temp{FILE_NUM}.   URL_NUM corresponds
 to url_id_list[FILE_NUM] in the list below.
@@ -28,31 +27,36 @@ url_id_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
 '96138398649', '60372706574', '12850962109', '20217064707', \
 '11255445596', '52302814025', '32005985260', '66680840842']
 
-Other files
+*Other files*
 ***********************************************************************
-grab_urls.py:  Identifies URLs that need to be scraped.
+grab_urls.py 
+Identifies URLs that need to be scraped.
 
-get_url_text.py:  Usage get_url_text.py <url> <foldername> <filename> - saves the HTML for the page at URL as 
-/foldername/filename.txt in the current working directory.
+get_url_text.py 
+Usage get_url_text.py url foldername filename 
+Saves the HTML for the page at url as /foldername/filename.txt in the current working directory.
 
-erika_file
+erika_file 
 A text file with all the html on the page at the URL associate with the ID '45786125605'.
-The code to generate this file is commented out in the program.
+The code to generate this file is commented out in the file.
 
-temp files
-These files contain the description and images for sevaral different pages.
+temp files 
+These files contain the description and images for several different pages.
 
 
 
-TODO
+*TODO*
 ***********************************************************************
 Need to settle on a final design:
-(1)  Two modules one for downloading descriptions and one for downloading images.
-(2)  What functionality will work best.   Create scripts to access this functionality.
+(1)  What functionality will work best.   Create scripts to access this functionality.
+(2)  Two modules for downloading information one for descriptions and one for downloading images.
 
-Notes
+
+*Notes*
 ***********************************************************************
 The idea for this program was inspired by Al Sweitgart's nice book: https://automatetheboringstuff.com/2e/chapter12/
-Nice article on command line arguments in Python: https://realpython.com/python-command-line-arguments/
+This is a nice article on command line arguments in Python from Real Python:
+https://realpython.com/python-command-line-arguments/
+These two libraries have excellent documentation:
 Beautiful Soup:  https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 Requests:  https://docs.python-requests.org/en/master/
