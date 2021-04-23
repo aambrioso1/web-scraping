@@ -39,14 +39,15 @@ A text file with all the html on the page at the URL associate with the ID '4578
 The code to generate this file is commented out in the file.
 
 temp files    
-These files contain the description and images for several different pages.
+These files contain the description and images from several different pages.
 
 
 
 **TODO**
-Need to settle on a final design   
-(1)  What functionality will work best.   Create scripts to access this functionality.
-(2)  Two modules for downloading information one for descriptions and one for downloading images.
+(1)  Need to settle on a final design.  
+(2)  What functionality will work best.   Create scripts to access this functionality.
+(3)  Two modules for downloading information one for descriptions and one for downloading images.
+(4)  Need to download dates when info is posted to decide when it should be re-posted.
 
 *********************************************************************************************
 **Notes**
