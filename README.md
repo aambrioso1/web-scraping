@@ -43,15 +43,15 @@ These files contain the description and images from several different pages.
 
 
 
-**TODO**
+**TODO**   
 (1)  Need to settle on a final design.  
 (2)  What functionality will work best.   Create scripts to access this functionality.
 (3)  Two modules for downloading information one for descriptions and one for downloading images.
 (4)  Need to download dates when info is posted to decide when it should be re-posted.
 
 *********************************************************************************************
-**Notes**
-The idea for this program was inspired by Al Sweitgart's nice book: https://automatetheboringstuff.com/2e/chapter12/
+**Notes**   
+The idea for this code was inspired by Al Sweitgart's nice book: https://automatetheboringstuff.com/2e/chapter12/
 This is a nice article on command line arguments in Python from Real Python:
 https://realpython.com/python-command-line-arguments/
 These two libraries have excellent documentation:
