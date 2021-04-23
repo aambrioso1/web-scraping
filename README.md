@@ -1,8 +1,8 @@
-****web-scraping****   
+####web-scraping  
 A repository for experiments in web-scraping.
 
-**web_scraper**   
-Usage:  web_scraper FILE_NUM 
+**web_scraper.py**   
+Usage:  web_scraper.py FILE_NUM 
 The script goes to  https://www.mercari.com/us/item/m{URL_NUM}/ downloads the merchandise
 decription text and all the images into the folder called /temp{FILE_NUM}.   URL_NUM corresponds
 to url_id_list[FILE_NUM] in the list below.
@@ -26,8 +26,8 @@ url_id_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
 '96138398649', '60372706574', '12850962109', '20217064707', \
 '11255445596', '52302814025', '32005985260', '66680840842']
 
-**Other files**
-grab_urls.py     
+**Other files**   
+grab_urls.py        
 Identifies URLs that need to be scraped.
 
 get_url_text.py    
