@@ -10,12 +10,12 @@ to url_id_list[FILE_NUM] in the list below.
 This program grabs the description and images from URL for mrechandise on www.mercari.com.   
 The description and the images are placed in a file named temp{FILE_NUM}.      
 The program also prints the current working directory and the the URLs for the images that are downloaded.   
-
-
 It requires two modules that are not built-in to Python: requests and beautiful soup.    
 Requests is used to manage the http requests. The built-in module urllib3 will handle http requests but it is difficult to use.   Beautiful soup is used to parse the html.  Both requests and beautiful soup have    
 excellent online documentation.   See notes below.    
 
+**Other files**   
+grab_urls.py        
 The script grab_urls.py identifies the URLs that need to be scraped.   
 
 Using this script the following ID numbers identify the URLS to be scraped.   
@@ -25,10 +25,6 @@ url_id_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
 '61995288639', '80927475884', '96337524430', '56981262426', \
 '96138398649', '60372706574', '12850962109', '20217064707', \
 '11255445596', '52302814025', '32005985260', '66680840842']
-
-**Other files**   
-grab_urls.py        
-Identifies URLs that need to be scraped.
 
 get_url_text.py    
 Usage get_url_text.py url foldername filename 
@@ -43,7 +39,7 @@ These files contain the description and images from several different pages.
 
 
 
-**TODO**   
+**Issues**   
 (1)  Need to settle on a final design.  
 (2)  What functionality will work best.   Create scripts to access this functionality.
 (3)  Two modules for downloading information one for descriptions and one for downloading images.
