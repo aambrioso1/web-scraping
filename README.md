@@ -2,10 +2,10 @@
 A repository for experiments in web-scraping.
 
 **web_scraper.py**   
-Usage:  web_scraper.py FILE_NUM 
-The script goes to  https://www.mercari.com/us/item/m{URL_NUM}/ downloads the merchandise
-decription text and all the images into the folder called /temp{FILE_NUM}.   URL_NUM corresponds
-to url_id_list[FILE_NUM] in the list below.
+Usage:  web_scraper.py
+The script goes to  all the websites of the form https://www.mercari.com/us/item/m{URL_NUM}/ downloads the merchandise
+decription text and all the images into the folder called mercari_stuff/file_{URL_NUM}.   URL_NUM corresponds
+to an time in url_id_list in the list below.
 
 This program grabs the description and images from URL for mrechandise on www.mercari.com.   
 The description and the images are placed in a file named temp{FILE_NUM}.      
@@ -31,19 +31,16 @@ Usage get_url_text.py url foldername filename
 Saves the HTML for the page at url as /foldername/filename.txt in the current working directory.
 
 erika_file    
-A text file with all the html on the page at the URL associate with the ID '45786125605'.
+A text file with all the html on the page at the URL associated with the ID '45786125605'.
 The code to generate this file is commented out in the file.
 
 temp files    
 These files contain the description and images from several different pages.
 
-
-
 **Issues**   
 (1)  Need to settle on a final design.  
 (2)  What functionality will work best.   Create scripts to access this functionality.
-(3)  Two modules for downloading information one for descriptions and one for downloading images.
-(4)  Need to download dates when info is posted to decide when it should be re-posted.
+(3)  Need to download dates when info is posted to decide when it should be re-posted.
 
 *********************************************************************************************
 **Notes**   

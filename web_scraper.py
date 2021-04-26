@@ -21,58 +21,59 @@ url_id_list = ['94962627845', '28581050712', '45786125605', '59686343331', \
 '96138398649', '60372706574', '12850962109', '20217064707', \
 '11255445596', '52302814025', '32005985260', '66680840842']
 
-FILE_NUM = int(sys.argv[1])
-URL_ID = url_id_list[FILE_NUM]
 
-url = f'https://www.mercari.com/us/item/m{URL_ID}/'
-dir_name = f'temp{FILE_NUM}'
+for FILE_NUM in range(len(url_id_list)):
+	# FILE_NUM = int(sys.argv[1]) # This is not needed since we are now looping through all ID's
+	URL_ID = url_id_list[FILE_NUM]
+	url = f'https://www.mercari.com/us/item/m{URL_ID}/'
+	dir_name = f'file_{URL_ID}'
 
-"""
-For information on the need for the headers see:
-https://stackoverflow.com/questions/38489386/python-requests-403-forbidden#:~:text=If%20you%20still%20get%20a,Headers%20of%20the%20Developer%20Tools.
-"""
-headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-res = requests.get(url, headers=headers)
-
-
-if res.status_code == 404:
-	raise SystemExit(f'HTTP response status: {res.status_code}') # Exit with message if URL is bad
+	"""
+	For information on why we need headers see:
+	https://stackoverflow.com/questions/38489386/python-requests-403-forbidden#:~:text=If%20you%20still%20get%20a,Headers%20of%20the%20Developer%20Tools.
+	"""
+	headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+	res = requests.get(url, headers=headers)
 
 
-soup = bs4.BeautifulSoup(res.text, 'html.parser')
+	if res.status_code == 404:
+		raise SystemExit(f'HTTP response status: {res.status_code}') # Exit with message if URL is bad
 
-img_list = []
-for link in soup.find_all('img'):
-	if 'photos' in link.get('src'):
-		img_list.append(link.get('src'))
 
-print(50*'*')
-for i, url in enumerate(img_list):
-	print(f'for image{i+1} the url is {url}')
-print(50*'*','\n')
+	soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
-print(50*'*')
-try:
-    # Create the directory dir_name
-    os.mkdir(dir_name)
-    print(f'Directory {dir_name} created for storing info') 
-except FileExistsError:
-    print(f'Directory {dir_name} already exists')
-print(50*'*')
+	img_list = []
+	for link in soup.find_all('img'):
+		if 'photos' in link.get('src'):
+			img_list.append(link.get('src'))
 
-# We iterate through the image list and save each image in the dir_name folder as image1.jpg, image2.jpg, ...
-for i, url in enumerate(img_list):
-	res = requests.get(url)
-	res.raise_for_status
-	# This idea for downloading and image was borrowed from Automate the Boring Stuff.  See README file.
-	with open(f'{dir_name}/image' + str(i+1) + '.jpg','wb') as file:
-		for chunk in res.iter_content(100000):
-			file.write(chunk)
+	# print(50*'*')
+	# for i, url in enumerate(img_list):S
+	#	 print(f'for image{i+1} the url is {url}')
+	# print(50*'*','\n')
 
-# We save the description in the dir_name folder as description.txt
-description = soup.find(property="og:description").get('content')
-with open(f'{dir_name}/description.txt', 'w') as writer:
-    writer.write(description)
+	print(50*'*')
+	try:
+	    # Create the directory dir_name
+	    os.mkdir(f'mercari_stuff/{dir_name}')
+	    print(f'Directory mercari_stuff/{dir_name} created for storing info') 
+	except FileExistsError:
+	    print(f'Directory {dir_name} already exists')
+	print(50*'*')
+
+	# We iterate through the image list and save each image in the dir_name folder as image1.jpg, image2.jpg, ...
+	for i, url in enumerate(img_list):
+		res = requests.get(url)
+		res.raise_for_status
+		# This idea for downloading and image was borrowed from Automate the Boring Stuff.  See README file.
+		with open(f'mercari_stuff/{dir_name}/image' + str(i+1) + '.jpg','wb') as file:
+			for chunk in res.iter_content(100000):
+				file.write(chunk)
+
+	# We save the description in the dir_name folder as description.txt
+	description = soup.find(property="og:description").get('content')
+	with open(f'mercari_stuff/{dir_name}/description.txt', 'w') as writer:
+	    writer.write(description)
 
 """
 # url = 'https://mercari-images.global.ssl.fastly.net/photos/m45786125605_1.jpg?1617507386'
