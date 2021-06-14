@@ -1,5 +1,5 @@
-# A script, get_url_text.py to download the html source at a URL to a text file to a folders
-# call url_text
+# A script, get_url_text.py to download the html source at a URL to a text file to a folder
+# called url_text
 
 # Usage get_url_text.py url foldername filename
 

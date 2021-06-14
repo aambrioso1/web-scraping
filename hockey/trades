@@ -1,0 +1,5707 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   NHL Trade History - CapFriendly - NHL Salary Caps
+  </title>
+  <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600" rel="stylesheet" type="text/css"/>
+  <link href="https://www.capfriendly.com/trades" rel="canonical">
+   <link href="https://www.capfriendly.com/trades" hreflang="en" rel="alternate"/>
+   <link href="https://fr.capfriendly.com/trades" hreflang="fr" rel="alternate"/>
+   <meta charset="utf-8"/>
+   <meta content="strict-origin-when-cross-origin" name="referrer"/>
+   <meta content="NHL Trade tracking and history, trades by team, trades by season, trades by player" name="description"/>
+   <meta content="armchair-gm, salary cap, cap hit, daily tracker, salary, NHL, NHL salary, draft picks, draft, national hockey league, salary cap calculator, buyouts, nhl payrolls, NHL salary cap, salary cap hits, cap hits, cap space, nhl, free agents, salary cap" name="keywords"/>
+   <meta content="NHL Trade History - CapFriendly - NHL Salary Caps" name="title"/>
+   <meta content="" name="csrf-token"/>
+   <meta content="NHL Trade History - CapFriendly - NHL Salary Caps" property="og:title"/>
+   <meta content="https://www.capfriendly.com/trades" property="og:url"/>
+   <meta content="website" property="og:type"/>
+   <meta content="en_US" property="og:locale"/>
+   <meta content="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logo_square.png" property="og:image"/>
+   <meta content="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logo_square.png" property="og:image:secure_url"/>
+   <meta content="CapFriendly" property="og:site_name"/>
+   <meta content="NHL Trade tracking and history, trades by team, trades by season, trades by player" property="og:description"/>
+   <meta content="536570522" property="fb:admins"/>
+   <meta content="1549375668647253" property="fb:app_id"/>
+   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+   <meta content="summary" name="twitter:card"/>
+   <meta content="@capfriendly" name="twitter:site"/>
+   <meta content="NHL Trade History - CapFriendly - NHL Salary Caps" name="twitter:title"/>
+   <meta content="NHL Trade tracking and history, trades by team, trades by season, trades by player" name="twitter:description"/>
+   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/css/style.css?v=3.0.108" media="all" onerror="/assets/css/style.css?v=3.0.108" rel="stylesheet" type="text/css"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="57x57"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-60x60.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="60x60"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="72x72"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-76x76.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="76x76"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="114x114"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-120x120.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="120x120"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-144x144.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="144x144"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="152x152"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon apple-touch-icon-precomposed" sizes="180x180"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+    <link href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="/manifest.json" rel="manifest"/>
+    <link color="#104068" href="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/safari-pinned-tab.svg" rel="mask-icon"/>
+    <meta content="#da532c" name="msapplication-TileColor"/>
+    <meta content="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/favicons/mstile-144x144.png" name="msapplication-TileImage"/>
+    <meta content="#104068" name="theme-color"/>
+    <script>
+     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PMR7FW9');
+    </script>
+    <script>
+     function detectColorScheme(){
+	var theme="light";
+	if(localStorage.getItem("theme")){
+		if(localStorage.getItem("theme") == "dark"){
+			var theme = "dark";
+		}
+	}else if(!window.matchMedia){
+		return false;
+	}else if(window.matchMedia("(prefers-color-scheme: dark)").matches){
+		var theme = "dark";
+	}
+
+	if (theme=="dark") {
+		document.documentElement.setAttribute("data-theme", "dark");
+	}
+}detectColorScheme();
+    </script>
+   </link>
+  </link>
+ </head>
+ <body>
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PMR7FW9" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+  <script>
+   (adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-3375064585218048",
+			enable_page_level_ads: true
+		});
+  </script>
+  <script>
+   window.fbAsyncInit=function(){FB.init({appId:'1549375668647253',xfbml:true,version:'v2.2'});};(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_CA/sdk.js";fjs.parentNode.insertBefore(js,fjs)}(document,'script','facebook-jssdk'));
+  </script>
+  <div class="hide" data-value="" id="infraction_count">
+  </div>
+  <div id="nav">
+   <div class="l">
+    <a href="/">
+     <img alt="CapFriendly" class="abs" id="logo" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logo.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logo.svg" title="CapFriendly"/>
+    </a>
+   </div>
+   <div class="l" id="srch_f">
+    <form action="/search" id="srchf" method="GET">
+     <input id="srch" maxlength="80" name="s" placeholder="Search..." type="text"/>
+     <input id="srchi" type="submit" value=""/>
+    </form>
+   </div>
+   <span id="head_notifications">
+   </span>
+   <div id="nav_mma">
+    <div class="r nav nav2 nav_r">
+     <div class="r nav nav2 nav_r">
+      <div class="nav_s nav_s2 rel" id="settings">
+       <div alt="Settings" class="abs" id="settings_img" title="Settings">
+       </div>
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_settings" style="right:0">
+      <div class="nav_ax">
+       <h4 class="p5 mt10 mb10">
+        DISPLAY SETTING
+       </h4>
+       <div class="nav_cl">
+        <div class="ml5">
+         <div class="theme-switch-wrapper" style="margin-left:0;margin-right:0">
+          <label class="theme-switch" for="checkbox_foot" id="theme-switch-foot">
+           <input id="checkbox_foot" type="checkbox"/>
+           <div class="slider round">
+           </div>
+          </label>
+          <span class="ml10">
+           Toggle Dark Mode
+          </span>
+         </div>
+         <div>
+          <label>
+           <input id="automatic_theme" type="checkbox"/>
+           <span style="margin-left:38px">
+            Automatic Theme
+           </span>
+          </label>
+          <img alt="Tooltip" class="q" height="13" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/general/q.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/general/q2.svg" style="margin-bottom:-1px;margin-right:3px" title="Automatically select the theme based on the settings of your device. Requirements: Updated version of Firefox or Safari on macOS, iOS, or Windows 10" width="13"/>
+         </div>
+        </div>
+        <div class="cb">
+        </div>
+        <h4 class="p5 mt10 mb10">
+         LOCALE
+        </h4>
+        <a class="whi" href="https://fr.capfriendly.com">
+         <div class="nav_ms nav_msp">
+          FR
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <span id="head_login_user">
+    </span>
+    <span id="head_notifications_button">
+    </span>
+    <div class="r nav nav2 rel nav_r">
+     <a class="ghead" href="/forums">
+      <div class="nav_s nav_s2">
+       <div class="nav_si nav_si2">
+        FORUMS
+       </div>
+      </div>
+     </a>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="archv">
+      <div class="nav_si nav_si2">
+       ARCHIVE ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_archv" style="right:0">
+      <div class="nav_ax">
+       <h4 class="p5 mt10 mb10">
+        ARCHIVE
+       </h4>
+       <div class="nav_cl">
+        <a class="whi" href="/archive">
+         <div class="nav_ms nav_msp">
+          Past Cap Payrolls
+         </div>
+        </a>
+        <a class="whi" href="/articles/">
+         <div class="nav_ms nav_msp">
+          Articles
+         </div>
+        </a>
+        <a class="whi" href="/expansion-draft/vegas">
+         <div class="nav_ms nav_msp">
+          2017 Vegas Expansion Draft
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="faq">
+      <div class="nav_si nav_si2">
+       CBA ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_faq" style="right:0">
+      <div class="nav_ax">
+       <h4 class="p5 mt10 mb10">
+        CBA
+       </h4>
+       <div class="nav_cl">
+        <a class="whi" href="/faq">
+         <div class="nav_ms nav_msp">
+          CBA FAQ
+         </div>
+        </a>
+        <a class="whi" href="/buyout-faq">
+         <div class="nav_ms nav_msp">
+          Buyout FAQ
+         </div>
+        </a>
+        <a class="whi" href="/ltir-faq">
+         <div class="nav_ms nav_msp">
+          LTIR FAQ
+         </div>
+        </a>
+        <a class="whi" href="/offer-sheet-faq">
+         <div class="nav_ms nav_msp">
+          Offer Sheet FAQ
+         </div>
+        </a>
+       </div>
+       <div class="nav_cl">
+        <a class="whi" href="/waivers-faq">
+         <div class="nav_ms nav_msp">
+          Waivers FAQ
+         </div>
+        </a>
+        <a class="whi" href="/reserve-list-faq">
+         <div class="nav_ms nav_msp">
+          Reserve List FAQ
+         </div>
+        </a>
+        <a class="whi" href="/expansion-draft-faq">
+         <div class="nav_ms nav_msp">
+          Expansion Draft FAQ
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="calc">
+      <div class="nav_si nav_si2">
+       CALCULATORS ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_calc">
+      <div class="nav_ax">
+       <h4 class="p5 mt10 mb10">
+        CALCULATORS
+       </h4>
+       <div class="nav_cl">
+        <a class="whi" href="/buyout-calculator">
+         <div class="nav_ms nav_msp">
+          Buyout Calculator
+         </div>
+        </a>
+        <a class="whi" href="/waivers-calculator">
+         <div class="nav_ms nav_msp">
+          Waivers Calculator
+         </div>
+        </a>
+        <a class="whi" href="/qualifying-offer-calculator">
+         <div class="nav_ms nav_msp">
+          Qualifying Offer Calculator
+         </div>
+        </a>
+       </div>
+       <div class="nav_cl">
+        <a class="whi" href="/arbitration-calculator">
+         <div class="nav_ms nav_msp">
+          Arbitration Calculator
+         </div>
+        </a>
+        <a class="whi" href="/offer-sheet-calculator">
+         <div class="nav_ms nav_msp">
+          Offer Sheet Calculator
+         </div>
+        </a>
+        <a class="whi" href="/income-tax-calculator">
+         <div class="nav_ms nav_msp">
+          Income Tax Calculator
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="fantasy">
+      <div class="nav_si nav_si2">
+       FANTASY-TOOLS ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_fantasy" style="right:0">
+      <div class="nav_ax">
+       <h4 class="p5 mt10 mb5">
+        FANTASY HOCKEY TOOLS
+       </h4>
+       <div class="nav_cl">
+        <a class="whi" href="/fantasy-tools">
+         <div class="nav_ms nav_msp">
+          Summary Page
+         </div>
+        </a>
+        <a class="whi" href="/depth-charts">
+         <div class="nav_ms nav_msp">
+          Depth Charts
+         </div>
+        </a>
+        <a class="whi" href="/starting-goalies">
+         <div class="nav_ms nav_msp">
+          Starting Goalies
+         </div>
+        </a>
+        <a class="whi" href="/player-status">
+         <div class="nav_ms nav_msp">
+          Player Status Updates
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="tools">
+      <div class="nav_si nav_si2">
+       TOOLS ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_tools" style="right:0">
+      <div class="nav_ax">
+       <div class="cb">
+       </div>
+       <h4 class="p5 mt20 mb5">
+        TOOLS
+       </h4>
+       <div class="nav_cl">
+        <a class="whi" href="/draft">
+         <div class="nav_ms nav_msp">
+          Entry Draft Board
+         </div>
+        </a>
+        <a class="whi" href="/comparables">
+         <div class="nav_ms nav_msp">
+          Contract Comparables
+         </div>
+        </a>
+        <a class="whi" href="/team-affiliates">
+         <div class="nav_ms nav_msp">
+          Team Affiliates
+         </div>
+        </a>
+        <a class="whi" href="/professional-tryouts">
+         <div class="nav_ms nav_msp">
+          Professional Tryouts
+         </div>
+        </a>
+       </div>
+       <div class="nav_cl">
+        <a class="whi" href="/arbitration">
+         <div class="nav_ms nav_msp">
+          Arbitration Filings
+         </div>
+        </a>
+        <a class="whi" href="/coaches">
+         <div class="nav_ms nav_msp">
+          Coaches
+         </div>
+        </a>
+        <a class="whi" href="/general-managers">
+         <div class="nav_ms nav_msp">
+          General Managers
+         </div>
+        </a>
+        <a class="whi" href="/covid-roster-freeze-players">
+         <div class="nav_ms nav_msp">
+          COVID Roster Freeze Players
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="nplyr">
+      <div class="nav_si nav_si2">
+       PLAYERS ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_nplyr" style="right:0">
+      <div class="nav_ax">
+       <h4 class="p5 mt10 mb10">
+        PLAYERS
+       </h4>
+       <div class="nav_cl">
+        <a class="whi" href="/browse/free-agents">
+         <div class="nav_ms nav_msp">
+          Free Agents
+         </div>
+        </a>
+        <a class="whi" href="/browse/active">
+         <div class="nav_ms nav_msp">
+          Active Players
+         </div>
+        </a>
+        <a class="whi" href="/browse/inactive">
+         <div class="nav_ms nav_msp">
+          Inactive Players
+         </div>
+        </a>
+        <a class="whi" href="/browse/35-plus">
+         <div class="nav_ms nav_msp">
+          35+ Contracts
+         </div>
+        </a>
+        <a class="whi" href="/browse/elc">
+         <div class="nav_ms nav_msp">
+          Entry-Level Contracts
+         </div>
+        </a>
+        <a class="whi" href="/slides">
+         <div class="nav_ms nav_msp">
+          Entry-Level Slides
+         </div>
+        </a>
+        <a class="whi" href="/browse/ntc-nmc">
+         <div class="nav_ms nav_msp">
+          NTC-NMC
+         </div>
+        </a>
+        <a class="whi" href="/career-earnings">
+         <div class="nav_ms nav_msp">
+          Career Earnings
+         </div>
+        </a>
+       </div>
+       <div class="nav_cl">
+        <a class="whi" href="/cost-per-point">
+         <div class="nav_ms nav_msp">
+          Cost Per Point
+         </div>
+        </a>
+        <a class="whi" href="/trades">
+         <div class="nav_ms nav_msp">
+          Trades
+         </div>
+        </a>
+        <a class="whi" href="/signings">
+         <div class="nav_ms nav_msp">
+          Signings
+         </div>
+        </a>
+        <a class="whi" href="/transactions">
+         <div class="nav_ms nav_msp">
+          Transactions
+         </div>
+        </a>
+        <a class="whi" href="/retained-salary-transactions">
+         <div class="nav_ms nav_msp">
+          Retained Salary
+         </div>
+        </a>
+        <a class="whi" href="/buyout-history">
+         <div class="nav_ms nav_msp">
+          Buyout History
+         </div>
+        </a>
+        <a class="whi" href="/comparables">
+         <div class="nav_ms nav_msp">
+          Contract Comparables
+         </div>
+        </a>
+        <a class="whi" href="/professional-tryouts">
+         <div class="nav_ms nav_msp">
+          Professional Tryouts
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="ntm">
+      <div class="nav_si nav_si2">
+       TEAMS ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_ntm">
+      <div class="mb10" style="margin-left:auto;margin-right:auto;width:900px">
+       <div class="l c" style="width:50%">
+        <h4 class="mt10 p5">
+        </h4>
+        <div class="l" style="width:50%">
+         <div class="p5">
+          NORTH
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/flames">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_flames">
+            </div>
+            Calgary Flames
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/flames/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/oilers">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_oilers">
+            </div>
+            Edmonton Oilers
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/oilers/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/canadiens">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_habs">
+            </div>
+            Montreal Canadiens
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/canadiens/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/senators">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_sens">
+            </div>
+            Ottawa Senators
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/senators/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/mapleleafs">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_leafs">
+            </div>
+            Toronto Maple Leafs
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/mapleleafs/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/canucks">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_nucks">
+            </div>
+            Vancouver Canucks
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/canucks/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/jets">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_jets">
+            </div>
+            Winnipeg Jets
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/jets/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="l" style="width:50%">
+         <div class="p5">
+          WEST
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/ducks">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_ducks">
+            </div>
+            Anaheim Ducks
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/ducks/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/coyotes">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_yotes">
+            </div>
+            Arizona Coyotes
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/coyotes/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/avalanche">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_avs">
+            </div>
+            Colorado Avalanche
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/avalanche/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/kings">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_kings">
+            </div>
+            Los Angeles Kings
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/kings/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/wild">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_wild">
+            </div>
+            Minnesota Wild
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/wild/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/sharks">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_sharks">
+            </div>
+            San Jose Sharks
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/sharks/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/blues">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_blues">
+            </div>
+            St. Louis Blues
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/blues/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/goldenknights">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_knights">
+            </div>
+            Vegas Golden Knights
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/goldenknights/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="l c" style="width:50%">
+        <h4 class="mt10 p5">
+        </h4>
+        <div class="l" style="width:50%">
+         <div class="p5">
+          CENTRAL
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/hurricanes">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_canes">
+            </div>
+            Carolina Hurricanes
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/hurricanes/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/blackhawks">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_hawks">
+            </div>
+            Chicago Blackhawks
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/blackhawks/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/bluejackets">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_jackets">
+            </div>
+            Columbus Blue Jackets
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/bluejackets/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/stars">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_stars">
+            </div>
+            Dallas Stars
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/stars/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/redwings">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_wings">
+            </div>
+            Detroit Red Wings
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/redwings/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/panthers">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_panthers">
+            </div>
+            Florida Panthers
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/panthers/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/predators">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_preds">
+            </div>
+            Nashville Predators
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/predators/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/lightning">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_bolts">
+            </div>
+            Tampa Bay Lightning
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/lightning/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="l" style="width:50%">
+         <div class="p5">
+          EAST
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/bruins">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_bruins">
+            </div>
+            Boston Bruins
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/bruins/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/sabres">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_sabres">
+            </div>
+            Buffalo Sabres
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/sabres/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/devils">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_devils">
+            </div>
+            New Jersey Devils
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/devils/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/islanders">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_isles">
+            </div>
+            New York Islanders
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/islanders/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/rangers">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_rags">
+            </div>
+            New York Rangers
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/rangers/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/flyers">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_flyers">
+            </div>
+            Philadelphia Flyers
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/flyers/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/penguins">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_pens">
+            </div>
+            Pittsburgh Penguins
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/penguins/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/capitals">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_caps">
+            </div>
+            Washington Capitals
+           </div>
+          </a>
+          <div class="abs h_tr">
+           <a href="/teams/capitals/cap-tracker" title="Daily Cap Tracker">
+            <img alt="Daily Tracker" class="h_im" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/teams/cal2.svg" width="13"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="cb">
+       </div>
+       <div class="c mt10">
+        <div style="width:25%;margin-left:auto;margin-right:auto">
+         <div class="p5">
+          NEW
+         </div>
+         <div class="rel h_ar">
+          <a class="whi" href="/teams/kraken">
+           <div class="nav_ms nav_mst">
+            <div class="whi_im whi_kraken">
+            </div>
+            Seattle Kraken
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="r nav nav2 nav_r">
+     <div class="nav_s nav_s2" id="interactive">
+      <div class="nav_si nav_si2">
+       INTERACTIVE ▾
+      </div>
+     </div>
+     <div class="nav_a hide abs" id="nav_interactive" style="right:0">
+      <div class="nav_ax">
+       <h4 class="p5 mt10 mb5">
+        INTERACTIVE FEATURES
+       </h4>
+       <div class="nav_cl">
+        <a class="whi" href="/armchair-gm">
+         <div class="nav_ms nav_msp">
+          Armchair-GM (Custom Roster Simulator)
+         </div>
+        </a>
+        <a class="whi" href="/mock-draft">
+         <div class="nav_ms nav_msp">
+          Mock Draft (Entry Draft Simulator)
+         </div>
+        </a>
+        <a class="whi" href="/trade-machine">
+         <div class="nav_ms nav_msp">
+          Trade Machine (Trade Proposal Simulator)
+         </div>
+        </a>
+        <a class="whi" href="/expansion-draft/seattle">
+         <div class="nav_ms nav_msp">
+          Seattle Expansion Draft Simulator
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="r nav rel nav_r">
+    <div class="nav_s hide" id="nav_ms">
+     <div class="nav_si">
+      SEARCH
+     </div>
+    </div>
+   </div>
+   <div class="r rel">
+    <div class="hide" id="nav_mm">
+     <div class="nav_si nav_si1">
+     </div>
+    </div>
+   </div>
+   <span id="head_notifications_button_mobile">
+   </span>
+   <div class="r rel">
+    <div class="hide" id="nav_msp">
+     <div class="nav_si nav_si1">
+     </div>
+    </div>
+   </div>
+   <div class="r rel nav_r">
+    <div class="nav_s hide" id="nav_ms2">
+     <div class="nav_si nav_si1">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="hide" id="nav_mmm2">
+  </div>
+  <div class="hide" id="nav_mmmc">
+   <div class="hide" id="nav_mmm">
+    <div class="r navm rel nav_r" style="margin-top:60px;border-top:1px solid #104C90">
+     <div class="nav_sm nav_s2">
+      <a class="whi" href="/armchair-gm">
+       <div class="nav_si nav_si2">
+        ARMCHAIR-GM
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r" style="border-top:1px solid #104C90">
+     <div class="nav_sm nav_s2">
+      <a class="whi" href="/mock-draft">
+       <div class="nav_si nav_si2">
+        MOCK-DRAFT
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r" style="border-top:1px solid #104C90">
+     <div class="nav_sm nav_s2">
+      <a class="whi" href="/trade-machine">
+       <div class="nav_si nav_si2">
+        TRADE MACHINE
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r" style="border-top:1px solid #104C90">
+     <div class="nav_sm nav_s2">
+      <a class="" href="/expansion-draft/seattle">
+       <div class="nav_si nav_si2">
+        SEATTLE EXPANSION DRAFT
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2" id="ntm_m">
+      <div class="nav_si nav_si2">
+       TEAMS ▾
+      </div>
+     </div>
+     <div class="nav_a_m hide" id="nav_ntm_m">
+      <a class="whi" href="/teams/ducks">
+       <div class="nav_ms nav_msp">
+        Anaheim Ducks
+       </div>
+      </a>
+      <a class="whi" href="/teams/coyotes">
+       <div class="nav_ms nav_msp">
+        Arizona Coyotes
+       </div>
+      </a>
+      <a class="whi" href="/teams/bruins">
+       <div class="nav_ms nav_msp">
+        Boston Bruins
+       </div>
+      </a>
+      <a class="whi" href="/teams/sabres">
+       <div class="nav_ms nav_msp">
+        Buffalo Sabres
+       </div>
+      </a>
+      <a class="whi" href="/teams/flames">
+       <div class="nav_ms nav_msp">
+        Calgary Flames
+       </div>
+      </a>
+      <a class="whi" href="/teams/hurricanes">
+       <div class="nav_ms nav_msp">
+        Carolina Hurricanes
+       </div>
+      </a>
+      <a class="whi" href="/teams/blackhawks">
+       <div class="nav_ms nav_msp">
+        Chicago Blackhawks
+       </div>
+      </a>
+      <a class="whi" href="/teams/avalanche">
+       <div class="nav_ms nav_msp">
+        Colorado Avalanche
+       </div>
+      </a>
+      <a class="whi" href="/teams/bluejackets">
+       <div class="nav_ms nav_msp">
+        Columbus Blue Jackets
+       </div>
+      </a>
+      <a class="whi" href="/teams/stars">
+       <div class="nav_ms nav_msp">
+        Dallas Stars
+       </div>
+      </a>
+      <a class="whi" href="/teams/redwings">
+       <div class="nav_ms nav_msp">
+        Detroit Red Wings
+       </div>
+      </a>
+      <a class="whi" href="/teams/oilers">
+       <div class="nav_ms nav_msp">
+        Edmonton Oilers
+       </div>
+      </a>
+      <a class="whi" href="/teams/panthers">
+       <div class="nav_ms nav_msp">
+        Florida Panthers
+       </div>
+      </a>
+      <a class="whi" href="/teams/kings">
+       <div class="nav_ms nav_msp">
+        Los Angeles Kings
+       </div>
+      </a>
+      <a class="whi" href="/teams/wild">
+       <div class="nav_ms nav_msp">
+        Minnesota Wild
+       </div>
+      </a>
+      <a class="whi" href="/teams/canadiens">
+       <div class="nav_ms nav_msp">
+        Montreal Canadiens
+       </div>
+      </a>
+      <a class="whi" href="/teams/predators">
+       <div class="nav_ms nav_msp">
+        Nashville Predators
+       </div>
+      </a>
+      <a class="whi" href="/teams/devils">
+       <div class="nav_ms nav_msp">
+        New Jersey Devils
+       </div>
+      </a>
+      <a class="whi" href="/teams/islanders">
+       <div class="nav_ms nav_msp">
+        New York Islanders
+       </div>
+      </a>
+      <a class="whi" href="/teams/rangers">
+       <div class="nav_ms nav_msp">
+        New York Rangers
+       </div>
+      </a>
+      <a class="whi" href="/teams/senators">
+       <div class="nav_ms nav_msp">
+        Ottawa Senators
+       </div>
+      </a>
+      <a class="whi" href="/teams/flyers">
+       <div class="nav_ms nav_msp">
+        Philadelphia Flyers
+       </div>
+      </a>
+      <a class="whi" href="/teams/penguins">
+       <div class="nav_ms nav_msp">
+        Pittsburgh Penguins
+       </div>
+      </a>
+      <a class="whi" href="/teams/sharks">
+       <div class="nav_ms nav_msp">
+        San Jose Sharks
+       </div>
+      </a>
+      <a class="whi" href="/teams/kraken">
+       <div class="nav_ms nav_msp">
+        Seattle Kraken
+       </div>
+      </a>
+      <a class="whi" href="/teams/blues">
+       <div class="nav_ms nav_msp">
+        St. Louis Blues
+       </div>
+      </a>
+      <a class="whi" href="/teams/lightning">
+       <div class="nav_ms nav_msp">
+        Tampa Bay Lightning
+       </div>
+      </a>
+      <a class="whi" href="/teams/mapleleafs">
+       <div class="nav_ms nav_msp">
+        Toronto Maple Leafs
+       </div>
+      </a>
+      <a class="whi" href="/teams/canucks">
+       <div class="nav_ms nav_msp">
+        Vancouver Canucks
+       </div>
+      </a>
+      <a class="whi" href="/teams/goldenknights">
+       <div class="nav_ms nav_msp">
+        Vegas Golden Knights
+       </div>
+      </a>
+      <a class="whi" href="/teams/capitals">
+       <div class="nav_ms nav_msp">
+        Washington Capitals
+       </div>
+      </a>
+      <a class="whi" href="/teams/jets">
+       <div class="nav_ms nav_msp">
+        Winnipeg Jets
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2" id="nplyr_m">
+      <div class="nav_si nav_si2">
+       PLAYERS ▾
+      </div>
+     </div>
+     <div class="nav_a_m hide" id="nav_nplyr_m">
+      <a class="whi" href="/browse/free-agents">
+       <div class="nav_ms nav_msp">
+        Free Agents
+       </div>
+      </a>
+      <a class="whi" href="/browse/active">
+       <div class="nav_ms nav_msp">
+        Active Players
+       </div>
+      </a>
+      <a class="whi" href="/browse/inactive">
+       <div class="nav_ms nav_msp">
+        Inactive Players
+       </div>
+      </a>
+      <a class="whi" href="/browse/35-plus">
+       <div class="nav_ms nav_msp">
+        35+ Contracts
+       </div>
+      </a>
+      <a class="whi" href="/browse/elc">
+       <div class="nav_ms nav_msp">
+        Entry-Level Contracts
+       </div>
+      </a>
+      <a class="whi" href="/slides">
+       <div class="nav_ms nav_msp">
+        Entry-Level Slides
+       </div>
+      </a>
+      <a class="whi" href="/browse/ntc-nmc">
+       <div class="nav_ms nav_msp">
+        NTC-NMC
+       </div>
+      </a>
+      <a class="whi" href="/career-earnings">
+       <div class="nav_ms nav_msp">
+        Career Earnings
+       </div>
+      </a>
+      <a class="whi" href="/cost-per-point">
+       <div class="nav_ms nav_msp">
+        Cost Per Point
+       </div>
+      </a>
+      <a class="whi" href="/trades">
+       <div class="nav_ms nav_msp">
+        Trades
+       </div>
+      </a>
+      <a class="whi" href="/signings">
+       <div class="nav_ms nav_msp">
+        Signings
+       </div>
+      </a>
+      <a class="whi" href="/transactions">
+       <div class="nav_ms nav_msp">
+        Transactions
+       </div>
+      </a>
+      <a class="whi" href="/retained-salary-transactions">
+       <div class="nav_ms nav_msp">
+        Retained Salary
+       </div>
+      </a>
+      <a class="whi" href="/buyout-history">
+       <div class="nav_ms nav_msp">
+        Buyout History
+       </div>
+      </a>
+      <a class="whi" href="/comparables">
+       <div class="nav_ms nav_msp">
+        Contract Comparables
+       </div>
+      </a>
+      <a class="whi" href="/professional-tryouts">
+       <div class="nav_ms nav_msp">
+        Professional Tryouts
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2" id="tools_m">
+      <div class="nav_si nav_si2">
+       TOOLS ▾
+      </div>
+     </div>
+     <div class="nav_a_m hide" id="nav_tools_m">
+      <a class="whi" href="/draft">
+       <div class="nav_ms nav_msp">
+        Entry Draft Board
+       </div>
+      </a>
+      <a class="whi" href="/comparables">
+       <div class="nav_ms nav_msp">
+        Contract Comparables
+       </div>
+      </a>
+      <a class="whi" href="/arbitration">
+       <div class="nav_ms nav_msp">
+        Arbitration Filings
+       </div>
+      </a>
+      <a class="whi" href="/professional-tryouts">
+       <div class="nav_ms nav_msp">
+        Professional Tryouts
+       </div>
+      </a>
+      <a class="whi" href="/coaches">
+       <div class="nav_ms nav_msp">
+        Coaches
+       </div>
+      </a>
+      <a class="whi" href="/general-managers">
+       <div class="nav_ms nav_msp">
+        General Managers
+       </div>
+      </a>
+      <a class="whi" href="/covid-roster-freeze-players">
+       <div class="nav_ms nav_msp">
+        COVID Roster Freeze Players
+       </div>
+      </a>
+      <a class="whi" href="/team-affiliates">
+       <div class="nav_ms nav_msp">
+        Team Affiliates
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2" id="ftools_m">
+      <div class="nav_si nav_si2">
+       FANTASY-TOOLS ▾
+      </div>
+     </div>
+     <div class="nav_a_m hide" id="nav_ftools_m">
+      <a class="whi" href="/fantasy-tools">
+       <div class="nav_ms nav_msp">
+        Summary Page
+       </div>
+      </a>
+      <a class="whi" href="/depth-charts">
+       <div class="nav_ms nav_msp">
+        Depth Charts
+       </div>
+      </a>
+      <a class="whi" href="/starting-goalies">
+       <div class="nav_ms nav_msp">
+        Starting Goalies
+       </div>
+      </a>
+      <a class="whi" href="/player-status">
+       <div class="nav_ms nav_msp">
+        Player Status Updates
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2" id="calc_m">
+      <div class="nav_si nav_si2">
+       CALCULATORS ▾
+      </div>
+     </div>
+     <div class="nav_a_m hide" id="nav_calc_m">
+      <a class="whi" href="/buyout-calculator">
+       <div class="nav_ms nav_msp">
+        Buyout Calculator
+       </div>
+      </a>
+      <a class="whi" href="/waivers-calculator">
+       <div class="nav_ms nav_msp">
+        Waivers Calculator
+       </div>
+      </a>
+      <a class="whi" href="/qualifying-offer-calculator">
+       <div class="nav_ms nav_msp">
+        Qualifying Offer Calculator
+       </div>
+      </a>
+      <a class="whi" href="/arbitration-calculator">
+       <div class="nav_ms nav_msp">
+        Arbitration Calculator
+       </div>
+      </a>
+      <a class="whi" href="/offer-sheet-calculator">
+       <div class="nav_ms nav_msp">
+        Offer Sheet Calculator
+       </div>
+      </a>
+      <a class="whi" href="/income-tax-calculator">
+       <div class="nav_ms nav_msp">
+        Income Tax Calculator
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2" id="faq_m">
+      <div class="nav_si nav_si2">
+       CBA▾
+      </div>
+     </div>
+     <div class="nav_a_m hide" id="nav_faq_m">
+      <a class="whi" href="/faq">
+       <div class="nav_ms nav_msp">
+        CBA FAQ
+       </div>
+      </a>
+      <a class="whi" href="/buyout-faq">
+       <div class="nav_ms nav_msp">
+        Buyout FAQ
+       </div>
+      </a>
+      <a class="whi" href="/ltir-faq">
+       <div class="nav_ms nav_msp">
+        LTIR FAQ
+       </div>
+      </a>
+      <a class="whi" href="/offer-sheet-faq">
+       <div class="nav_ms nav_msp">
+        Offer Sheet FAQ
+       </div>
+      </a>
+      <a class="whi" href="/waivers-faq">
+       <div class="nav_ms nav_msp">
+        Waivers FAQ
+       </div>
+      </a>
+      <a class="whi" href="/reserve-list-faq">
+       <div class="nav_ms nav_msp">
+        Reserve List FAQ
+       </div>
+      </a>
+      <a class="whi" href="/expansion-draft-faq">
+       <div class="nav_ms nav_msp">
+        Expansion Draft FAQ
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2" id="archive_m">
+      <div class="nav_si nav_si2">
+       ARCHIVE ▾
+      </div>
+     </div>
+     <div class="nav_a_m hide" id="nav_archive_m">
+      <a class="whi" href="/archive">
+       <div class="nav_ms nav_msp">
+        Past Cap Payrolls
+       </div>
+      </a>
+      <a class="whi" href="/articles/">
+       <div class="nav_ms nav_msp">
+        Articles
+       </div>
+      </a>
+      <a class="whi" href="/expansion-draft/vegas">
+       <div class="nav_ms nav_msp">
+        2017 Vegas Expansion Draft
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="nav_sm nav_s2">
+      <a class="whi" href="/forums">
+       <div class="nav_si nav_si2">
+        FORUMS
+       </div>
+      </a>
+     </div>
+    </div>
+    <span id="head_login_user_mobile">
+    </span>
+    <div class="navm rel nav_r">
+     <div class="nav_s2 nav_sm">
+      <a class="whi" href="https://fr.capfriendly.com">
+       <div class="nav_si nav_si2">
+        FR
+       </div>
+      </a>
+     </div>
+    </div>
+    <div class="r navm rel nav_r">
+     <div class="mt10">
+      <div class="nav_s2 nav_sm">
+       <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox_head" id="theme-switch-head">
+         <input id="checkbox_head" type="checkbox"/>
+         <div class="slider round">
+         </div>
+        </label>
+        <span class="ml10">
+         Toggle Dark Mode
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="nav_mmb">
+    </div>
+   </div>
+  </div>
+  <div id="nav_spacer">
+  </div>
+  <div class="g_lbrd_top_cont">
+   <div class="g_lbrd_ad">
+    <div class="ablk_alrt">
+    </div>
+    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
+    <!-- CapFriendly Leaderboard -->
+    <ins class="adsbygoogle g_lbrd_adc" data-ad-client="ca-pub-3375064585218048" data-ad-slot="3739961013" data-full-width-responsive="true" style="display:block">
+    </ins>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+   </div>
+  </div>
+  <div class="wrap">
+   <div class="wbg">
+    <div class="p10 rel">
+     <div class="c">
+      <h1>
+       Trades
+      </h1>
+     </div>
+     <div class="mb5">
+      <a href="/trades">
+       Reset Filters
+      </a>
+     </div>
+     <div class="l mr10">
+      <h6>
+       Team
+      </h6>
+      <span class="custom-dropdown">
+       <select id="filter_team">
+        <option value="0">
+         All
+        </option>
+        <option value="ducks">
+         Anaheim Ducks
+        </option>
+        <option value="coyotes">
+         Arizona Coyotes
+        </option>
+        <option value="thrashers">
+         Atlanta Thrashers
+        </option>
+        <option value="bruins">
+         Boston Bruins
+        </option>
+        <option value="sabres">
+         Buffalo Sabres
+        </option>
+        <option value="flames">
+         Calgary Flames
+        </option>
+        <option value="hurricanes">
+         Carolina Hurricanes
+        </option>
+        <option value="blackhawks">
+         Chicago Blackhawks
+        </option>
+        <option value="avalanche">
+         Colorado Avalanche
+        </option>
+        <option value="bluejackets">
+         Columbus Blue Jackets
+        </option>
+        <option value="stars">
+         Dallas Stars
+        </option>
+        <option value="redwings">
+         Detroit Red Wings
+        </option>
+        <option value="oilers">
+         Edmonton Oilers
+        </option>
+        <option value="panthers">
+         Florida Panthers
+        </option>
+        <option value="kings">
+         Los Angeles Kings
+        </option>
+        <option value="wild">
+         Minnesota Wild
+        </option>
+        <option value="canadiens">
+         Montreal Canadiens
+        </option>
+        <option value="predators">
+         Nashville Predators
+        </option>
+        <option value="devils">
+         New Jersey Devils
+        </option>
+        <option value="islanders">
+         New York Islanders
+        </option>
+        <option value="rangers">
+         New York Rangers
+        </option>
+        <option value="senators">
+         Ottawa Senators
+        </option>
+        <option value="flyers">
+         Philadelphia Flyers
+        </option>
+        <option value="penguins">
+         Pittsburgh Penguins
+        </option>
+        <option value="sharks">
+         San Jose Sharks
+        </option>
+        <option value="kraken">
+         Seattle Kraken
+        </option>
+        <option value="blues">
+         St. Louis Blues
+        </option>
+        <option value="lightning">
+         Tampa Bay Lightning
+        </option>
+        <option value="mapleleafs">
+         Toronto Maple Leafs
+        </option>
+        <option value="canucks">
+         Vancouver Canucks
+        </option>
+        <option value="goldenknights">
+         Vegas Golden Knights
+        </option>
+        <option value="capitals">
+         Washington Capitals
+        </option>
+        <option value="jets">
+         Winnipeg Jets
+        </option>
+       </select>
+      </span>
+     </div>
+     <div class="l mr10">
+      <h6>
+       Min. # of Players
+      </h6>
+      <span class="custom-dropdown">
+       <select class="highlight_nondefault" id="players_count" style="min-width:140px">
+        <option data-default="" value="0">
+        </option>
+        <option value="1">
+         1
+        </option>
+        <option value="2">
+         2
+        </option>
+        <option value="3">
+         3
+        </option>
+        <option value="4">
+         4
+        </option>
+        <option value="5">
+         5
+        </option>
+        <option value="6">
+         6
+        </option>
+       </select>
+      </span>
+     </div>
+     <div class="l mr10">
+      <h6>
+       Min. # of Draft Picks
+      </h6>
+      <span class="custom-dropdown">
+       <select class="highlight_nondefault" id="dp_count" style="min-width:140px">
+        <option data-default="" value="0">
+        </option>
+        <option value="1">
+         1
+        </option>
+        <option value="2">
+         2
+        </option>
+        <option value="3">
+         3
+        </option>
+        <option value="4">
+         4
+        </option>
+        <option value="5">
+         5
+        </option>
+        <option value="6">
+         6
+        </option>
+       </select>
+      </span>
+     </div>
+     <div class="l mr10">
+      <h6>
+       Event
+      </h6>
+      <span class="custom-dropdown">
+       <select class="highlight_nondefault" id="event">
+        <option data-default="" value="0">
+        </option>
+        <option value="1">
+         Trade Deadline
+        </option>
+        <option value="2">
+         Entry-Level Draft
+        </option>
+       </select>
+      </span>
+     </div>
+     <div class="l mr10" id="fil_fa">
+      <h6>
+       Date Range
+      </h6>
+      <input class="l custom-input" id="from" name="from" style="width:90px"/>
+      <label class="l" style="margin-top:4px">
+       -
+      </label>
+      <input class="l custom-input" id="to" name="to" style="width:90px"/>
+     </div>
+     <div class="l mb10">
+      <h6>
+       Season
+      </h6>
+      <a class="season hid_anc" data-season="0" href="trades">
+       All
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2021" href="/trades/2021">
+       2020-21
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2020" href="/trades/2020">
+       2019-20
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2019" href="/trades/2019">
+       2018-19
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2018" href="/trades/2018">
+       2017-18
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2017" href="/trades/2017">
+       2016-17
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2016" href="/trades/2016">
+       2015-16
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2015" href="/trades/2015">
+       2014-15
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2014" href="/trades/2014">
+       2013-14
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2013" href="/trades/2013">
+       2012-13
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2012" href="/trades/2012">
+       2011-12
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2011" href="/trades/2011">
+       2010-11
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2010" href="/trades/2010">
+       2009-10
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2009" href="/trades/2009">
+       2008-09
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2008" href="/trades/2008">
+       2007-08
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2007" href="/trades/2007">
+       2006-07
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2006" href="/trades/2006">
+       2005-06
+      </a>
+      <span class="mr5 ml5">
+       |
+      </span>
+      <a class="season" data-season="2005" href="/trades/2005">
+       2004-05
+      </a>
+     </div>
+     <div class="cb">
+     </div>
+     <div class="l mr10" id="trade_search">
+      <h6>
+       Player Search
+      </h6>
+      <input class="l custom-input" id="player_search" style="width:200px"/>
+     </div>
+     <div class="cb mb10">
+      <h6>
+       Filter Draft Pick Round
+      </h6>
+      <div>
+       <label class="mr5">
+        <input class="round" data-round="1" type="checkbox"/>
+        1
+       </label>
+       <label class="mr5">
+        <input class="round" data-round="2" type="checkbox"/>
+        2
+       </label>
+       <label class="mr5">
+        <input class="round" data-round="3" type="checkbox"/>
+        3
+       </label>
+       <label class="mr5">
+        <input class="round" data-round="4" type="checkbox"/>
+        4
+       </label>
+       <label class="mr5">
+        <input class="round" data-round="5" type="checkbox"/>
+        5
+       </label>
+       <label class="mr5">
+        <input class="round" data-round="6" type="checkbox"/>
+        6
+       </label>
+       <label class="mr5">
+        <input class="round" data-round="7" type="checkbox"/>
+        7
+       </label>
+      </div>
+     </div>
+     <div class="cb">
+     </div>
+     <h6>
+      General Filters
+     </h6>
+     <div>
+      <label>
+       <input id="multi_team" type="checkbox"/>
+       Multiple Team Trade (3+)
+      </label>
+     </div>
+     <div>
+      <label>
+       <input id="retained_salary" type="checkbox"/>
+       Retained Salary
+      </label>
+     </div>
+     <div>
+      <label>
+       <input id="signing_rights" type="checkbox"/>
+       Player Signing Rights
+      </label>
+     </div>
+     <div>
+      <label>
+       <input id="conditional_draft_pick" type="checkbox"/>
+       Conditional Draft Pick
+      </label>
+     </div>
+     <div>
+      <label>
+       <input id="future_considerations" type="checkbox"/>
+       Future Considerations
+      </label>
+     </div>
+     <div class="cb">
+     </div>
+     <div class="table_nav mt10">
+      <div class="navx navx_s" id="cha_n" style="min-width:120px">
+       CAP HIT AFFECTING
+       <div class="navx_bord">
+       </div>
+      </div>
+      <div class="navx navx_us" id="ch_n" style="min-width:120px">
+       CAP HIT
+       <div class="navx_bord">
+       </div>
+      </div>
+      <div class="navx navx_us" id="sal_n" style="min-width:120px">
+       SALARY
+       <div class="navx_bord">
+       </div>
+      </div>
+     </div>
+     <div id="trade_a">
+      <table class="fixed tbl" id="trade">
+       <thead>
+        <tr class="column_head">
+         <td class="left" style="width:100px">
+          DATE
+         </td>
+         <td class="center" colspan="34">
+          TRADE DETAILS
+         </td>
+        </tr>
+       </thead>
+       <tbody id="cont_x">
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440203">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/canucks">
+             <div>
+              Vancouver Canucks Acquire:
+             </div>
+             <img alt="Vancouver Canucks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/vancouver_canucks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2021 6th round pick (WPG - #178)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$2,000,000
+              </span>
+              <span class="ch hide green">
+               -$2,000,000
+              </span>
+              <span class="sal hide green">
+               -$1,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/jets">
+             <div>
+              Winnipeg Jets Acquire:
+             </div>
+             <img alt="Winnipeg Jets" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/winnipeg_jets.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/jordie-benn">
+              <span>
+               Jordie Benn
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $2,000,000
+             </span>
+             <span class="ch hide">
+              $2,000,000
+             </span>
+             <span class="sal hide">
+              $1,600,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $2,000,000
+              </span>
+              <span class="ch hide">
+               $2,000,000
+              </span>
+              <span class="sal hide">
+               $1,600,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$2,000,000
+              </span>
+              <span class="ch hide red">
+               +$2,000,000
+              </span>
+              <span class="sal hide red">
+               +$1,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440188">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/flyers">
+             <div>
+              Philadelphia Flyers Acquire:
+             </div>
+             <img alt="Philadelphia Flyers" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/philadelphia_flyers.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2021 5th round pick (VGK - #160)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$1,200,000
+              </span>
+              <span class="ch hide green">
+               -$1,200,000
+              </span>
+              <span class="sal hide red">
+               +$33,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/capitals">
+             <div>
+              Washington Capitals Acquire:
+             </div>
+             <img alt="Washington Capitals" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/washington_capitals.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/michael-raffl">
+              <span>
+               Michael Raffl
+              </span>
+             </a>
+             ($400,000 retained - 25%) ·
+             <span class="cha">
+              $1,200,000
+             </span>
+             <span class="ch hide">
+              $1,200,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,200,000
+              </span>
+              <span class="ch hide">
+               $1,200,000
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,200,000
+              </span>
+              <span class="ch hide red">
+               +$1,200,000
+              </span>
+              <span class="sal hide green">
+               -$33,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440180">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/predators">
+             <div>
+              Nashville Predators Acquire:
+             </div>
+             <img alt="Nashville Predators" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/nashville_predators.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/erik-gudbranson">
+              <span>
+               Erik Gudbranson
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $4,000,000
+             </span>
+             <span class="ch hide">
+              $4,000,000
+             </span>
+             <span class="sal hide">
+              $3,000,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $4,000,000
+              </span>
+              <span class="ch hide">
+               $4,000,000
+              </span>
+              <span class="sal hide">
+               $3,000,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$4,000,000
+              </span>
+              <span class="ch hide red">
+               +$3,157,500
+              </span>
+              <span class="sal hide red">
+               +$2,930,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/senators">
+             <div>
+              Ottawa Senators Acquire:
+             </div>
+             <img alt="Ottawa Senators" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/ottawa_senators_21.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/brandon-fortunato">
+              <span>
+               Brandon Fortunato
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $842,500
+             </span>
+             <span class="sal hide">
+              $70,000
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+            </div>
+            <div>
+             2023 7th round pick (NSH)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $842,500
+              </span>
+              <span class="sal hide">
+               $70,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$4,000,000
+              </span>
+              <span class="ch hide green">
+               -$3,157,500
+              </span>
+              <span class="sal hide green">
+               -$2,930,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440173">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/sharks">
+             <div>
+              San Jose Sharks Acquire:
+             </div>
+             <img alt="San Jose Sharks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/san_jose_sharks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/alexander-barabanov">
+              <span>
+               Alexander Barabanov
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $925,000
+             </span>
+             <span class="ch hide">
+              $925,000
+             </span>
+             <span class="sal hide">
+              $925,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $925,000
+              </span>
+              <span class="ch hide">
+               $925,000
+              </span>
+              <span class="sal hide">
+               $925,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$925,000
+              </span>
+              <span class="ch hide red">
+               +$225,000
+              </span>
+              <span class="sal hide red">
+               +$225,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/mapleleafs">
+             <div>
+              Toronto Maple Leafs Acquire:
+             </div>
+             <img alt="Toronto Maple Leafs" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/toronto_maple_leafs.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/antti-suomela">
+              <span>
+               Antti Suomela
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $700,000
+             </span>
+             <span class="sal hide">
+              $700,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $700,000
+              </span>
+              <span class="sal hide">
+               $700,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$925,000
+              </span>
+              <span class="ch hide green">
+               -$225,000
+              </span>
+              <span class="sal hide green">
+               -$225,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440145">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/ducks">
+             <div>
+              Anaheim Ducks Acquire:
+             </div>
+             <img alt="Anaheim Ducks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/anaheim_ducks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/haydn-fleury">
+              <span>
+               Haydn Fleury
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $1,300,000
+             </span>
+             <span class="ch hide">
+              $1,300,000
+             </span>
+             <span class="sal hide">
+              $1,050,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,300,000
+              </span>
+              <span class="ch hide">
+               $1,300,000
+              </span>
+              <span class="sal hide">
+               $1,050,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$550,000
+              </span>
+              <span class="ch hide red">
+               +$550,000
+              </span>
+              <span class="sal hide red">
+               +$300,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/hurricanes">
+             <div>
+              Carolina Hurricanes Acquire:
+             </div>
+             <img alt="Carolina Hurricanes" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/carolina_hurricanes.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/jani-hakanpaa">
+              <span>
+               Jani Hakanpää
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $750,000
+             </span>
+             <span class="ch hide">
+              $750,000
+             </span>
+             <span class="sal hide">
+              $750,000
+             </span>
+            </div>
+            <div>
+             2022 6th round pick (ANA)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $750,000
+              </span>
+              <span class="ch hide">
+               $750,000
+              </span>
+              <span class="sal hide">
+               $750,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$550,000
+              </span>
+              <span class="ch hide green">
+               -$550,000
+              </span>
+              <span class="sal hide green">
+               -$300,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440141">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/canadiens">
+             <div>
+              Montreal Canadiens Acquire:
+             </div>
+             <img alt="Montreal Canadiens" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/montreal_canadiens.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/erik-gustafsson">
+              <span>
+               Erik Gustafsson
+              </span>
+             </a>
+             ($1,500,000 retained - 50%) ·
+             <span class="cha">
+              $1,500,000
+             </span>
+             <span class="ch hide">
+              $1,500,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,500,000
+              </span>
+              <span class="ch hide">
+               $1,500,000
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,500,000
+              </span>
+              <span class="ch hide red">
+               +$1,500,000
+              </span>
+              <span class="sal hide green">
+               -$147,000,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/flyers">
+             <div>
+              Philadelphia Flyers Acquire:
+             </div>
+             <img alt="Philadelphia Flyers" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/philadelphia_flyers.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2022 7th round pick (STL)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$1,500,000
+              </span>
+              <span class="ch hide green">
+               -$1,500,000
+              </span>
+              <span class="sal hide red">
+               +$147,000,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440139">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/ducks">
+             <div>
+              Anaheim Ducks Acquire:
+             </div>
+             <img alt="Anaheim Ducks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/anaheim_ducks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2022 5th round pick (TOR)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$950,000
+              </span>
+              <span class="ch hide green">
+               -$950,000
+              </span>
+              <span class="sal hide green">
+               -$950,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/mapleleafs">
+             <div>
+              Toronto Maple Leafs Acquire:
+             </div>
+             <img alt="Toronto Maple Leafs" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/toronto_maple_leafs.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/ben-hutton">
+              <span>
+               Ben Hutton
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $950,000
+             </span>
+             <span class="ch hide">
+              $950,000
+             </span>
+             <span class="sal hide">
+              $950,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $950,000
+              </span>
+              <span class="ch hide">
+               $950,000
+              </span>
+              <span class="sal hide">
+               $950,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$950,000
+              </span>
+              <span class="ch hide red">
+               +$950,000
+              </span>
+              <span class="sal hide red">
+               +$950,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440138">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/redwings">
+             <div>
+              Detroit Red Wings Acquire:
+             </div>
+             <img alt="Detroit Red Wings" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/detroit_red_wings.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/richard-panik">
+              <span>
+               Richard Pánik
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $1,675,000
+             </span>
+             <span class="ch hide">
+              $2,750,000
+             </span>
+             <span class="sal hide">
+              $2,200,000
+             </span>
+            </div>
+            <div>
+             <a href="/players/jakub-vrana">
+              <span>
+               Jakub Vrána
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $3,350,000
+             </span>
+             <span class="ch hide">
+              $3,350,000
+             </span>
+             <span class="sal hide">
+              $3,000,000
+             </span>
+            </div>
+            <div>
+             2021 1st round pick (WSH - #23)
+            </div>
+            <div>
+             2022 2nd round pick (WSH)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $5,025,000
+              </span>
+              <span class="ch hide">
+               $6,100,000
+              </span>
+              <span class="sal hide">
+               $5,200,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$675,000
+              </span>
+              <span class="ch hide red">
+               +$400,000
+              </span>
+              <span class="sal hide red">
+               +$700,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/capitals">
+             <div>
+              Washington Capitals Acquire:
+             </div>
+             <img alt="Washington Capitals" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/washington_capitals.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/anthony-mantha">
+              <span>
+               Anthony Mantha
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $5,700,000
+             </span>
+             <span class="ch hide">
+              $5,700,000
+             </span>
+             <span class="sal hide">
+              $4,500,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $5,700,000
+              </span>
+              <span class="ch hide">
+               $5,700,000
+              </span>
+              <span class="sal hide">
+               $4,500,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$675,000
+              </span>
+              <span class="ch hide green">
+               -$400,000
+              </span>
+              <span class="sal hide green">
+               -$700,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440115">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/blackhawks">
+             <div>
+              Chicago Blackhawks Acquire:
+             </div>
+             <img alt="Chicago Blackhawks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/chicago_blackhawks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2021 4th round pick (VAN - #105)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide green">
+               -$725,000
+              </span>
+              <span class="sal hide green">
+               -$700,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/canucks">
+             <div>
+              Vancouver Canucks Acquire:
+             </div>
+             <img alt="Vancouver Canucks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/vancouver_canucks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/madison-bowey">
+              <span>
+               Madison Bowey
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $725,000
+             </span>
+             <span class="sal hide">
+              $700,000
+             </span>
+            </div>
+            <div>
+             2021 5th round pick (CHI - #140)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $725,000
+              </span>
+              <span class="sal hide">
+               $700,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide red">
+               +$725,000
+              </span>
+              <span class="sal hide red">
+               +$700,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440083">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/blackhawks">
+             <div>
+              Chicago Blackhawks Acquire:
+             </div>
+             <img alt="Chicago Blackhawks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/chicago_blackhawks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From VGK:
+            </div>
+            <div>
+             2021 2nd round pick (VGK - #64)
+            </div>
+            <div>
+             2022 3rd round pick (VGK)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$1,125,000
+              </span>
+              <span class="ch hide green">
+               -$1,125,000
+              </span>
+              <span class="sal hide red">
+               +$110,250,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/sharks">
+             <div>
+              San Jose Sharks Acquire:
+             </div>
+             <img alt="San Jose Sharks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/san_jose_sharks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From CHI:
+            </div>
+            <div>
+             <a href="/players/mattias-janmark">
+              <span>
+               Mattias Janmark
+              </span>
+             </a>
+             ($1,125,000 retained - 50%) ·
+             <span class="cha">
+              $1,125,000
+             </span>
+             <span class="ch hide">
+              $1,125,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 b">
+             From VGK:
+            </div>
+            <div>
+             2022 5th round pick (BUF)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $562,500
+              </span>
+              <span class="ch hide">
+               $562,500
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$562,500
+              </span>
+              <span class="ch hide red">
+               +$562,500
+              </span>
+              <span class="sal hide green">
+               -$225,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/goldenknights">
+             <div>
+              Vegas Golden Knights Acquire:
+             </div>
+             <img alt="Vegas Golden Knights" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/vegas_golden_knights.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From SJS:
+            </div>
+            <div>
+             <a href="/players/mattias-janmark">
+              <span>
+               Mattias Janmark
+              </span>
+             </a>
+             ($562,500 retained - 50%) ·
+             <span class="cha">
+              $562,500
+             </span>
+             <span class="ch hide">
+              $562,500
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div>
+             <a href="/players/nick-desimone">
+              <span>
+               Nick DeSimone
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $700,000
+             </span>
+             <span class="sal hide">
+              $225,000
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+            </div>
+            <div class="mt10 b">
+             From CHI:
+            </div>
+            <div>
+             2022 5th round pick (CHI)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $562,500
+              </span>
+              <span class="ch hide">
+               $562,500
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$562,500
+              </span>
+              <span class="ch hide red">
+               +$562,500
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440077">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/flames">
+             <div>
+              Calgary Flames Acquire:
+             </div>
+             <img alt="Calgary Flames" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/calgary_flames.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/emil-heineman">
+              <span>
+               Emil Heineman
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $0
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+             <span class="trade_d ahl">
+              (Signing Rights)
+             </span>
+            </div>
+            <div>
+             2022 2nd round pick (FLA)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$2,550,000
+              </span>
+              <span class="ch hide green">
+               -$2,550,000
+              </span>
+              <span class="sal hide green">
+               -$2,550,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/panthers">
+             <div>
+              Florida Panthers Acquire:
+             </div>
+             <img alt="Florida Panthers" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/florida_panthers.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/sam-bennett">
+              <span>
+               Sam Bennett
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $2,550,000
+             </span>
+             <span class="ch hide">
+              $2,550,000
+             </span>
+             <span class="sal hide">
+              $2,550,000
+             </span>
+            </div>
+            <div>
+             2022 6th round pick (CGY)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $2,550,000
+              </span>
+              <span class="ch hide">
+               $2,550,000
+              </span>
+              <span class="sal hide">
+               $2,550,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$2,550,000
+              </span>
+              <span class="ch hide red">
+               +$2,550,000
+              </span>
+              <span class="sal hide red">
+               +$2,550,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440041">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/blackhawks">
+             <div>
+              Chicago Blackhawks Acquire:
+             </div>
+             <img alt="Chicago Blackhawks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/chicago_blackhawks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/josh-dickinson">
+              <span>
+               Josh Dickinson
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $925,000
+             </span>
+             <span class="sal hide">
+              $70,000
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+            </div>
+            <div>
+             <a href="/players/ryder-rolston">
+              <span>
+               Ryder Rolston
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $0
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+             <span class="trade_d ahl">
+              (Signing Rights)
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $925,000
+              </span>
+              <span class="sal hide">
+               $70,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$1,000,000
+              </span>
+              <span class="ch hide green">
+               -$75,000
+              </span>
+              <span class="sal hide green">
+               -$930,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/avalanche">
+             <div>
+              Colorado Avalanche Acquire:
+             </div>
+             <img alt="Colorado Avalanche" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/colorado_avalanche.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/carl-soderberg">
+              <span>
+               Carl Söderberg
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $1,000,000
+             </span>
+             <span class="ch hide">
+              $1,000,000
+             </span>
+             <span class="sal hide">
+              $1,000,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,000,000
+              </span>
+              <span class="ch hide">
+               $1,000,000
+              </span>
+              <span class="sal hide">
+               $1,000,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,000,000
+              </span>
+              <span class="ch hide red">
+               +$75,000
+              </span>
+              <span class="sal hide red">
+               +$930,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/440001">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/sharks">
+             <div>
+              San Jose Sharks Acquire:
+             </div>
+             <img alt="San Jose Sharks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/san_jose_sharks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/magnus-chrona">
+              <span>
+               Magnus Chrona
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $0
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+             <span class="trade_d ahl">
+              (Signing Rights)
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide green">
+               -$700,000
+              </span>
+              <span class="sal hide green">
+               -$700,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/lightning">
+             <div>
+              Tampa Bay Lightning Acquire:
+             </div>
+             <img alt="Tampa Bay Lightning" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/tampa_bay_lightning.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/fredrik-claesson">
+              <span>
+               Fredrik Claesson
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $700,000
+             </span>
+             <span class="sal hide">
+              $700,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $700,000
+              </span>
+              <span class="sal hide">
+               $700,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide red">
+               +$700,000
+              </span>
+              <span class="sal hide red">
+               +$700,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/439998">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/oilers">
+             <div>
+              Edmonton Oilers Acquire:
+             </div>
+             <img alt="Edmonton Oilers" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/edmonton_oilers.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/dmitry-kulikov">
+              <span>
+               Dmitry Kulikov
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $1,150,000
+             </span>
+             <span class="ch hide">
+              $1,150,000
+             </span>
+             <span class="sal hide">
+              $1,150,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,150,000
+              </span>
+              <span class="ch hide">
+               $1,150,000
+              </span>
+              <span class="sal hide">
+               $1,150,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,150,000
+              </span>
+              <span class="ch hide red">
+               +$1,150,000
+              </span>
+              <span class="sal hide red">
+               +$1,150,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/devils">
+             <div>
+              New Jersey Devils Acquire:
+             </div>
+             <img alt="New Jersey Devils" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/new_jersey_devils.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2022 conditional 4th round pick* (EDM)
+            </div>
+            <div class="trade_cond mt10">
+             *Conditions: The 2022 4th round pick will upgrade to a 2022 3rd round pick if the Oilers win a playoff round in the 2020-21 Stanley Cup playoffs
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$1,150,000
+              </span>
+              <span class="ch hide green">
+               -$1,150,000
+              </span>
+              <span class="sal hide green">
+               -$1,150,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/439945">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/blackhawks">
+             <div>
+              Chicago Blackhawks Acquire:
+             </div>
+             <img alt="Chicago Blackhawks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/chicago_blackhawks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/adam-gaudette">
+              <span>
+               Adam Gaudette
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $950,000
+             </span>
+             <span class="ch hide">
+              $950,000
+             </span>
+             <span class="sal hide">
+              $950,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $950,000
+              </span>
+              <span class="ch hide">
+               $950,000
+              </span>
+              <span class="sal hide">
+               $950,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$225,000
+              </span>
+              <span class="ch hide red">
+               +$225,000
+              </span>
+              <span class="sal hide red">
+               +$250,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/canucks">
+             <div>
+              Vancouver Canucks Acquire:
+             </div>
+             <img alt="Vancouver Canucks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/vancouver_canucks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/matthew-highmore">
+              <span>
+               Matthew Highmore
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $725,000
+             </span>
+             <span class="ch hide">
+              $725,000
+             </span>
+             <span class="sal hide">
+              $700,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $725,000
+              </span>
+              <span class="ch hide">
+               $725,000
+              </span>
+              <span class="sal hide">
+               $700,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$225,000
+              </span>
+              <span class="ch hide green">
+               -$225,000
+              </span>
+              <span class="sal hide green">
+               -$250,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/439762">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/bruins">
+             <div>
+              Boston Bruins Acquire:
+             </div>
+             <img alt="Boston Bruins" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/boston_bruins.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/curtis-lazar">
+              <span>
+               Curtis Lazar
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $800,000
+             </span>
+             <span class="ch hide">
+              $800,000
+             </span>
+             <span class="sal hide">
+              $800,000
+             </span>
+            </div>
+            <div>
+             <a href="/players/taylor-hall">
+              <span>
+               Taylor Hall
+              </span>
+             </a>
+             ($4,000,000 retained - 50%) ·
+             <span class="cha">
+              $4,000,000
+             </span>
+             <span class="ch hide">
+              $4,000,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $4,800,000
+              </span>
+              <span class="ch hide">
+               $4,800,000
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$3,200,000
+              </span>
+              <span class="ch hide red">
+               +$3,200,000
+              </span>
+              <span class="sal hide green">
+               -$392,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/sabres">
+             <div>
+              Buffalo Sabres Acquire:
+             </div>
+             <img alt="Buffalo Sabres" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/buffalo_sabres_21.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/anders-bjork">
+              <span>
+               Anders Bjork
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $1,600,000
+             </span>
+             <span class="ch hide">
+              $1,600,000
+             </span>
+             <span class="sal hide">
+              $1,400,000
+             </span>
+            </div>
+            <div>
+             2021 2nd round pick (BOS - #53)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,600,000
+              </span>
+              <span class="ch hide">
+               $1,600,000
+              </span>
+              <span class="sal hide">
+               $1,400,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$3,200,000
+              </span>
+              <span class="ch hide green">
+               -$3,200,000
+              </span>
+              <span class="sal hide red">
+               +$392,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 12, 2021
+          <a href="/forums/thread/439714">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/kings">
+             <div>
+              Los Angeles Kings Acquire:
+             </div>
+             <img alt="Los Angeles Kings" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/los_angeles_kings.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2022 conditional 3rd round pick* (PIT)
+            </div>
+            <div>
+             2023 conditional 4th round pick** (PIT)
+            </div>
+            <div class="trade_cond mt10">
+             *Conditions: The 2022 3rd round pick can upgrade to a 2nd round pick if the Penguins reach the  2020-21 Stanley Cup Final and Carter plays in at least 50% of the games.
+            </div>
+            <div class="trade_cond mt10">
+             **Conditions: The 2023 4th round pick can upgrade to a 3rd round pick if Carter plays in at least 50 games during the 2021-22 season
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$2,636,364
+              </span>
+              <span class="ch hide green">
+               -$2,636,364
+              </span>
+              <span class="sal hide red">
+               +$97,999,981
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/penguins">
+             <div>
+              Pittsburgh Penguins Acquire:
+             </div>
+             <img alt="Pittsburgh Penguins" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/pittsburgh_penguins.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/jeff-carter">
+              <span>
+               Jeff Carter
+              </span>
+             </a>
+             ($2,636,363 retained - 50%) ·
+             <span class="cha">
+              $2,636,364
+             </span>
+             <span class="ch hide">
+              $2,636,364
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $2,636,364
+              </span>
+              <span class="ch hide">
+               $2,636,364
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$2,636,364
+              </span>
+              <span class="ch hide red">
+               +$2,636,364
+              </span>
+              <span class="sal hide green">
+               -$97,999,981
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 11, 2021
+          <a href="/forums/thread/439620">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/bruins">
+             <div>
+              Boston Bruins Acquire:
+             </div>
+             <img alt="Boston Bruins" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/boston_bruins.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/mike-reilly">
+              <span>
+               Mike Reilly
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $1,500,000
+             </span>
+             <span class="ch hide">
+              $1,500,000
+             </span>
+             <span class="sal hide">
+              $1,500,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,500,000
+              </span>
+              <span class="ch hide">
+               $1,500,000
+              </span>
+              <span class="sal hide">
+               $1,500,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,500,000
+              </span>
+              <span class="ch hide red">
+               +$1,500,000
+              </span>
+              <span class="sal hide red">
+               +$1,500,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/senators">
+             <div>
+              Ottawa Senators Acquire:
+             </div>
+             <img alt="Ottawa Senators" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/ottawa_senators_21.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2022 3rd round pick (BOS)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$1,500,000
+              </span>
+              <span class="ch hide green">
+               -$1,500,000
+              </span>
+              <span class="sal hide green">
+               -$1,500,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 11, 2021
+          <a href="/forums/thread/439616">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/islanders">
+             <div>
+              New York Islanders Acquire:
+             </div>
+             <img alt="New York Islanders" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/new_york_islanders.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/braydon-coburn">
+              <span>
+               Braydon Coburn
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $625,000
+             </span>
+             <span class="ch hide">
+              $1,700,000
+             </span>
+             <span class="sal hide">
+              $1,600,000
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $625,000
+              </span>
+              <span class="ch hide">
+               $1,700,000
+              </span>
+              <span class="sal hide">
+               $1,600,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$625,000
+              </span>
+              <span class="ch hide red">
+               +$1,700,000
+              </span>
+              <span class="sal hide red">
+               +$1,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/senators">
+             <div>
+              Ottawa Senators Acquire:
+             </div>
+             <img alt="Ottawa Senators" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/ottawa_senators_21.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2022 7th round pick (NYI)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$625,000
+              </span>
+              <span class="ch hide green">
+               -$1,700,000
+              </span>
+              <span class="sal hide green">
+               -$1,600,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 11, 2021
+          <a href="/forums/thread/439604">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/flames">
+             <div>
+              Calgary Flames Acquire:
+             </div>
+             <img alt="Calgary Flames" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/calgary_flames.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2022 3rd round pick (TOR)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$1,375,000
+              </span>
+              <span class="ch hide green">
+               -$1,375,000
+              </span>
+              <span class="sal hide red">
+               +$134,750,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/mapleleafs">
+             <div>
+              Toronto Maple Leafs Acquire:
+             </div>
+             <img alt="Toronto Maple Leafs" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/toronto_maple_leafs.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/david-rittich">
+              <span>
+               David Rittich
+              </span>
+             </a>
+             ($1,375,000 retained - 50%) ·
+             <span class="cha">
+              $1,375,000
+             </span>
+             <span class="ch hide">
+              $1,375,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,375,000
+              </span>
+              <span class="ch hide">
+               $1,375,000
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,375,000
+              </span>
+              <span class="ch hide red">
+               +$1,375,000
+              </span>
+              <span class="sal hide green">
+               -$134,750,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 11, 2021
+          <a href="/forums/thread/439452">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/bluejackets">
+             <div>
+              Columbus Blue Jackets Acquire:
+             </div>
+             <img alt="Columbus Blue Jackets" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/columbus_blue_jackets.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From TOR:
+            </div>
+            <div>
+             2021 1st round pick (TOR - #25)
+            </div>
+            <div>
+             2022 4th round pick (TOR)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$2,750,000
+              </span>
+              <span class="ch hide green">
+               -$2,750,000
+              </span>
+              <span class="sal hide red">
+               +$269,500,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/sharks">
+             <div>
+              San Jose Sharks Acquire:
+             </div>
+             <img alt="San Jose Sharks" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/san_jose_sharks.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From CBJ:
+            </div>
+            <div>
+             <a href="/players/nick-foligno">
+              <span>
+               Nick Foligno
+              </span>
+             </a>
+             ($2,750,000 retained - 50%) ·
+             <span class="cha">
+              $1,375,000
+             </span>
+             <span class="ch hide">
+              $1,375,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 b">
+             From TOR:
+            </div>
+            <div>
+             2021 4th round pick (TOR - #121)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,375,000
+              </span>
+              <span class="ch hide">
+               $1,375,000
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,375,000
+              </span>
+              <span class="ch hide red">
+               +$1,375,000
+              </span>
+              <span class="sal hide green">
+               -$925,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/mapleleafs">
+             <div>
+              Toronto Maple Leafs Acquire:
+             </div>
+             <img alt="Toronto Maple Leafs" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/toronto_maple_leafs.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From SJS:
+            </div>
+            <div>
+             <a href="/players/stefan-noesen">
+              <span>
+               Stefan Noesen
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $0
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+            </div>
+            <div>
+             <a href="/players/nick-foligno">
+              <span>
+               Nick Foligno
+              </span>
+             </a>
+             ($1,375,000 retained - 50%) ·
+             <span class="cha">
+              $1,375,000
+             </span>
+             <span class="ch hide">
+              $1,375,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,375,000
+              </span>
+              <span class="ch hide">
+               $1,375,000
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,375,000
+              </span>
+              <span class="ch hide red">
+               +$1,375,000
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 11, 2021
+          <a href="/forums/thread/439299">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/redwings">
+             <div>
+              Detroit Red Wings Acquire:
+             </div>
+             <img alt="Detroit Red Wings" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/detroit_red_wings.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/hayden-verbeek">
+              <span>
+               Hayden Verbeek
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $753,333
+             </span>
+             <span class="sal hide">
+              $70,000
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+            </div>
+            <div>
+             2021 5th round pick (OTT - #138)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $753,333
+              </span>
+              <span class="sal hide">
+               $70,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$925,000
+              </span>
+              <span class="ch hide green">
+               -$171,667
+              </span>
+              <span class="sal hide green">
+               -$855,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/canadiens">
+             <div>
+              Montreal Canadiens Acquire:
+             </div>
+             <img alt="Montreal Canadiens" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/montreal_canadiens.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/jon-merrill">
+              <span>
+               Jon Merrill
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $925,000
+             </span>
+             <span class="ch hide">
+              $925,000
+             </span>
+             <span class="sal hide">
+              $925,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $925,000
+              </span>
+              <span class="ch hide">
+               $925,000
+              </span>
+              <span class="sal hide">
+               $925,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$925,000
+              </span>
+              <span class="ch hide red">
+               +$171,667
+              </span>
+              <span class="sal hide red">
+               +$855,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="odd">
+         <td class="left">
+          Apr 11, 2021
+          <a href="/forums/thread/439296">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/devils">
+             <div>
+              New Jersey Devils Acquire:
+             </div>
+             <img alt="New Jersey Devils" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/new_jersey_devils.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             <a href="/players/jonas-siegenthaler">
+              <span>
+               Jonas Siegenthaler
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $800,000
+             </span>
+             <span class="ch hide">
+              $800,000
+             </span>
+             <span class="sal hide">
+              $800,000
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $800,000
+              </span>
+              <span class="ch hide">
+               $800,000
+              </span>
+              <span class="sal hide">
+               $800,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$800,000
+              </span>
+              <span class="ch hide red">
+               +$800,000
+              </span>
+              <span class="sal hide red">
+               +$800,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="16">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/capitals">
+             <div>
+              Washington Capitals Acquire:
+             </div>
+             <img alt="Washington Capitals" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/washington_capitals.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div>
+             2021 conditional 3rd round pick* (ARI - #75)
+            </div>
+            <div class="trade_cond mt10">
+             *Conditions: Arizona's draft pick is currently listed as conditional between Arizona and New Jersey. If the pick is not transferred to New Jersey, the 3rd round pick will be changed to New Jerseys 2021 3rd round pick instead of Arizona's
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$800,000
+              </span>
+              <span class="ch hide green">
+               -$800,000
+              </span>
+              <span class="sal hide green">
+               -$800,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+        <tr class="even">
+         <td class="left">
+          Apr 10, 2021
+          <a href="/forums/thread/438971">
+           <img class="q mr2" height="16" onerror="this.src='https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.png';this.onerror=null;" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/forums/chat.svg" style="margin-bottom:-3px;margin-left:3px" title="Discuss Trade" width="16"/>
+          </a>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/bluejackets">
+             <div>
+              Columbus Blue Jackets Acquire:
+             </div>
+             <img alt="Columbus Blue Jackets" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/columbus_blue_jackets.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From TBL:
+            </div>
+            <div>
+             2021 1st round pick (TBL - #31)
+            </div>
+            <div>
+             2022 3rd round pick (TBL)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $0
+              </span>
+              <span class="ch hide">
+               $0
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha green">
+               -$2,125,000
+              </span>
+              <span class="ch hide green">
+               -$2,125,000
+              </span>
+              <span class="sal hide red">
+               +$196,000,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/redwings">
+             <div>
+              Detroit Red Wings Acquire:
+             </div>
+             <img alt="Detroit Red Wings" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/detroit_red_wings.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From CBJ:
+            </div>
+            <div>
+             <a href="/players/david-savard">
+              <span>
+               David Savard
+              </span>
+             </a>
+             ($2,125,000 retained - 50%) ·
+             <span class="cha">
+              $2,125,000
+             </span>
+             <span class="ch hide">
+              $2,125,000
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div class="mt10 b">
+             From TBL:
+            </div>
+            <div>
+             2021 4th round pick (TBL - #125)
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,062,500
+              </span>
+              <span class="ch hide">
+               $1,062,500
+              </span>
+              <span class="sal hide">
+               $0
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,062,500
+              </span>
+              <span class="ch hide red">
+               +$1,062,500
+              </span>
+              <span class="sal hide red">
+               +$1,062,500
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+         <td align="center" colspan="2">
+          <img alt="Trade" height="15" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/trades/trade.svg" style="margin:0 0 -2px 0" width="15"/>
+         </td>
+         <td class="center" colspan="10">
+          <div>
+           <h6 class="mb10">
+            <a class="hid_anc" href="/teams/lightning">
+             <div>
+              Tampa Bay Lightning Acquire:
+             </div>
+             <img alt="Tampa Bay Lightning" class="im_mid" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/logos/tampa_bay_lightning.svg" style="height:35px;width:35px;"/>
+            </a>
+           </h6>
+           <div>
+            <div class="mt10 b">
+             From DET:
+            </div>
+            <div>
+             <a href="/players/david-savard">
+              <span>
+               David Savard
+              </span>
+             </a>
+             ($1,062,500 retained - 50%) ·
+             <span class="cha">
+              $1,062,500
+             </span>
+             <span class="ch hide">
+              $1,062,500
+             </span>
+             <span class="sal hide">
+              $0
+             </span>
+            </div>
+            <div>
+             <a href="/players/brian-lashoff">
+              <span>
+               Brian Lashoff
+              </span>
+             </a>
+             ·
+             <span class="cha">
+              $0
+             </span>
+             <span class="ch hide">
+              $700,000
+             </span>
+             <span class="sal hide">
+              $275,000
+             </span>
+             <span class="trade_d ahl">
+              (AHL/JR)
+             </span>
+            </div>
+            <div class="mt10 trade_d">
+             <div>
+              Sum:
+              <span class="cha">
+               $1,062,500
+              </span>
+              <span class="ch hide">
+               $1,062,500
+              </span>
+              <span class="sal hide">
+               $1,000,000
+              </span>
+             </div>
+             <div>
+              Change:
+              <span class="cha red">
+               +$1,062,500
+              </span>
+              <span class="ch hide red">
+               +$1,062,500
+              </span>
+              <span class="sal hide red">
+               +$1,000,000
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="load" id="load" style="margin-top:0;border-top:0">
+      <div class="load_t" id="load_button">
+       Load More
+      </div>
+      <div class="load_i hide" id="load_icon">
+       <img class="im_mid" height="40" src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/icons/animated/default-loader.svg" width="40"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="foot">
+   <div class="g_flbrd_ad mb10">
+    <div class="ablk_alrt">
+    </div>
+    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
+    <!-- Footer Responsive -->
+    <ins class="adsbygoogle g_flbrd_adc" data-ad-client="ca-pub-3375064585218048" data-ad-format="auto" data-ad-slot="5997679415" data-full-width-responsive="true" style="display:block">
+    </ins>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+   </div>
+   <div>
+    <span class="mr15">
+     <a href="/terms">
+      Terms of Use
+     </a>
+    </span>
+    <span class="mr15">
+     <a href="/privacy-policy">
+      Privacy Policy
+     </a>
+    </span>
+    <span class="mr15">
+     <a href="/forum-rules">
+      Forum Rules
+     </a>
+    </span>
+    <span class="mr15">
+     <a href="/about">
+      About
+     </a>
+    </span>
+    <span class="mr15">
+     <a href="/faq">
+      CBA FAQ
+     </a>
+    </span>
+    <span>
+     <a href="/contact">
+      Contact Us
+     </a>
+    </span>
+   </div>
+   <div>
+    <div class="mt3 c">
+     <div class="c">
+      <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/CapFriendly?ref_src=twsrc%5Etfw">
+       Follow @CapFriendly
+      </a>
+      <script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js">
+      </script>
+     </div>
+    </div>
+    <div class="mt3 c">
+     <div class="c">
+      <div class="fb-like" data-action="like" data-href="https://www.facebook.com/capfriendly/" data-layout="button" data-share="false" data-show-faces="true">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="cb mb20">
+    © 2021 CapFriendly.com
+   </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/jquery/jquery.form.js">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/jquery/jquery.history.js">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/jquery/jquery.cookie.js">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/jquery/jquery.appear-1.1.1.min.js">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/jquery/jquery.stickytableheaders.min.js?ver=1.1">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/jquery/jquery.bxslider.min.js?ver=1.1.1">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/include/global.js?v=1.8">
+  </script>
+  <script src="https://capfriendly-wlb8ng5.stackpathdns.com/assets/js/include/ads/adblocker.js" type="text/javascript">
+  </script>
+  <script>
+   var imgdir="https://capfriendly-wlb8ng5.stackpathdns.com/assets/images/";
+var imgdir_user="https://capfriendly-avatars-wlb8ng5.stackpathdns.com/";
+var cookie_domain="capfriendly.com";
+var site_title_detail = "NHL Salary Caps";
+var current_season = 2021;
+
+$(document).ready(function(){
+	w = $(window).width()-20;
+	h = $(window).height();
+	if(h<600){
+		var h1 = '400';
+	}else{
+		var h1 = 'auto';
+	}
+	if(parseInt($("#infraction_count").attr("data-value")) > 0){
+		$("#infraction_notf").dialog({
+			title: "Warning/Infraction Notice",
+			autoOpen:false,
+			resizable: false,
+			width: w,
+			modal: true,
+			height: h1,
+			hide: {
+				effect: 'fade',
+				duration: 500
+			},
+		 });
+		$("#infraction_notf").dialog('open');
+		$('.ui-dialog-titlebar-close').hide(); //Hide the corner close button
+	 }
+});
+$('body').on('click','#submitAcknowledgment',function(e){
+	$.post('/ajax/settings/infraction/acknowledge',{
+		token:token
+	}, function(d) {
+		if (d.meta.code == 200) {
+			$("#infraction_notf").dialog('close');
+		}
+	},"JSON");
+});
+
+function displayAdBlockerMessage(){
+	var ablk_alrt = "<b>AdBlock Detected</b><div class='p3'>Please consider whitelisting CapFriendly.com from your ad blocker. Ads help us host the site.</div>If you find any ads intrusive or inappropriate, please <a href='/contact'>contact us</a>.";
+	$('.ablk_alrt').addClass("ablk_dsply").html(ablk_alrt).show();
+}
+if($('#bVRHzLnkmSTJ').length == 0){
+	displayAdBlockerMessage();
+}
+  </script>
+  <script>
+   var filter={
+    staff:"",
+    team:0,
+    season:0,
+    min_players:0,
+    min_draftpicks:0,
+    event:0,
+    date_min:"0",
+    date_max:"0",
+    future_considerations:0,
+    multiple_team:0,
+    retained_salary:0,
+    signing_rights:0,
+    conditional_draft_pick:0,
+    page:1,
+    search:"",
+    round_1:0,
+    round_2:0,
+    round_3:0,
+    round_4:0,
+    round_5:0,
+    round_6:0,
+    round_7:0,
+};
+var offset_keys={
+    "date":"2021-04-10",
+    "trade_id":6430}
+function sticky(){
+	if($(window).width()>600){
+		$('#trade').stickyTableHeaders({fixedOffset:$('#nav')});
+	}else{
+		$('#trade').stickyTableHeaders('destroy');
+	}
+};
+$(window).on('resize',function(){
+	sticky();
+});
+sticky();
+$(document).on('click','.navx_us',function(e){
+	$(".navx").removeClass('navx_s').addClass('navx_us');;
+	$(this).removeClass('navx_us').addClass('navx_s');
+	if(this.id=="cha_n"){
+		tab=1;
+		$('.cha,.ahl').show();
+		$('.ch,.sal').hide();
+	}else if(this.id=="ch_n"){
+		tab=2;
+		$('.ch').show();
+		$('.cha,.sal,.ahl').hide();
+	}else if(this.id=="sal_n"){
+		tab=3;
+		$('.sal,.ahl').show();
+		$('.ch,.cha').hide();
+	}
+});
+$('body').on('change','#filter_team',function(e){
+    e.preventDefault();
+    filter.page = 1;
+    filter.staff = "";
+    url(true);
+});
+
+$('body').on('click','.season',function(e){
+    e.preventDefault();
+    filter.season = $(this).attr('data-season');
+    filter.page = 1;
+    $('.season').removeClass("hid_anc");
+    $('.season[data-season='+filter.season+']').addClass("hid_anc");
+    url(true);
+});
+$('body').on('change','#players_count',function(e){
+    e.preventDefault();
+    filter.min_players=$(this).val();
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','#dp_count',function(e){
+    e.preventDefault();
+    filter.min_draftpicks=$(this).val();
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','#event',function(e){
+    e.preventDefault();
+    filter.event=$(this).val();
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','#future_considerations',function(e){
+    e.preventDefault();
+    if(document.getElementById('future_considerations').checked) {
+        filter.future_considerations=1;
+    } else {
+        filter.future_considerations=0;
+    }
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','#multi_team',function(e){
+    e.preventDefault();
+    if(document.getElementById('multi_team').checked) {
+        filter.multiple_team=1;
+    } else {
+        filter.multiple_team=0;
+    }
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','#conditional_draft_pick',function(e){
+    e.preventDefault();
+    if(document.getElementById('conditional_draft_pick').checked) {
+        filter.conditional_draft_pick=1;
+    } else {
+        filter.conditional_draft_pick=0;
+    }
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','#signing_rights',function(e){
+    e.preventDefault();
+    if(document.getElementById('signing_rights').checked) {
+        filter.signing_rights=1;
+    } else {
+        filter.signing_rights=0;
+    }
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','#retained_salary',function(e){
+    e.preventDefault();
+    if(document.getElementById('retained_salary').checked) {
+        filter.retained_salary=1;
+    } else {
+        filter.retained_salary=0;
+    }
+    filter.page = 1;
+    url(true);
+});
+$('body').on('change','.round',function(e){
+    e.preventDefault();
+    var round=$(this).attr("data-round")
+    if($(this).prop('checked')){
+        filter["round_"+round] = 1;
+    } else {
+        filter["round_"+round] = 0;
+    }
+    filter.page = 1;
+    url(true);
+});
+var y=new Date().getFullYear();
+$('#from').datepicker({
+	changeMonth:true,
+	changeYear:true,
+	yearRange:'2000:'+y,
+	maxDate:'0',
+	onClose:function(selectedDate) {
+        $( "#to" ).datepicker("option","minDate",selectedDate);
+        filter.date_min=selectedDate.replace(/\//g,'');
+        if(filter.date_min!=0 && filter.date_max!=0)
+            filter.page = 1;
+      	    url(true);
+    }
+});
+$( "#to" ).datepicker({
+	changeMonth: true,
+	changeYear:true,
+	yearRange:'2000:'+y,
+	maxDate:'0',
+	onClose: function( selectedDate ) {
+		$( "#from" ).datepicker("option","maxDate",selectedDate);
+		filter.date_max=selectedDate.replace(/\//g,'');
+		if(filter.date_min!=0 && filter.date_max!=0)
+            filter.page = 1;
+			url(true);
+	}
+});
+var searchDelay = (function(){
+    var timer = 0;
+    return function (callback, ms){
+        clearTimeout(timer);
+        timer = setTimeout(callback, ms);
+    };
+})();
+$('body').on('keyup','#player_search',function(){
+    var search = $(this).val();
+    searchDelay(function(){
+        if(search.length>2){
+            filter.search = search.replace(/[^0-9a-zA-Z_ -]/gi,'');
+        }else{
+            filter.search = "";
+        }
+        filter.page = 1;
+        url(true);
+    },300);
+});
+function getFilterTeam(){
+    filter.team=$('#filter_team').val();
+}
+$('body').on('click','#load_button',function(e){
+    e.preventDefault();
+    $('#load_button').hide();
+    $('#load_icon').show();
+    url(false);
+});
+var url_var = "?";
+function urlVar(){
+    if(url_var == "?") {
+        url_var = "&"; 
+        return "?";
+    }
+    return "&";
+}
+function url(clear){
+    getFilterTeam();
+    var uri = "";
+    url_var = "?";
+    if(filter.staff!=""){
+        uri += '/staff/'+filter.staff;
+    }else{
+        if(filter.team!=0){
+            uri += '/'+filter.team;
+        }
+        if(filter.season!=0){
+            uri += urlVar()+'season='+filter.season;
+        }
+        if(filter.min_players!=0){
+            uri += urlVar()+'min-players='+filter.min_players;
+        }
+        if(filter.min_draftpicks!=0){
+            uri += urlVar()+'min-draftpicks='+filter.min_draftpicks;
+        }
+        if(filter.event!=0){
+            uri += urlVar()+'event=';
+            if(filter.event==1) uri += "deadline";
+            else if(filter.event==3) uri += "expansion";
+            else uri += "draft";
+        }
+        if(filter.date_min!=0&&filter.date_max!=0){
+            uri += urlVar()+'date='+filter.date_min+'-'+filter.date_max;
+        }
+        if(filter.future_considerations!=0){
+            uri += urlVar()+'future-considerations';
+        }
+        if(filter.multiple_team!=0){
+            uri += urlVar()+'multi-team';
+        }
+        if(filter.retained_salary!=0){
+            uri += urlVar()+'retained-salary';
+        }
+        if(filter.conditional_draft_pick!=0){
+            uri += urlVar()+'conditional-draft-pick';
+        }
+        if(filter.signing_rights!=0){
+            uri += urlVar()+'signing-rights';
+        }
+        if(filter.search!=""){
+            uri += urlVar()+'s='+encodeURIComponent(filter.search).replace(/%20/g, "+");
+        }
+        if(filter.round_1==1||filter.round_2==1||filter.round_3==1||filter.round_4==1||filter.round_5==1||filter.round_6==1||filter.round_7==1){
+            var round_set = 0;
+            uri += urlVar()+'round=';
+            for(i=1;i<=7;i++){
+                if(filter["round_"+String(i)] == 1){ 
+                    if(round_set==1){
+                        uri += '-';
+                    }
+                    uri += String(i);
+                    round_set=1;
+                }
+            }
+        }
+    }
+    History.replaceState('','Trades - CapFriendly','/trades'+uri);
+    
+
+    if (clear) {
+        $('#cont_x').css('opacity',0.3);
+        offset_keys.date="";
+        offset_keys.trade_id=0;
+    }
+    uri += urlVar() + 'ajax';
+    uri += urlVar() + 'offset-date='+offset_keys.date;
+    uri += urlVar() + 'offset-trade_id='+offset_keys.trade_id;
+    $.getJSON('/trades'+encodeURI(uri),function(d){
+        if (clear) {
+            $('#cont_x').css('opacity',1).empty();
+        }
+        $('#cont_x').append(d.data.html);
+        if (d.meta.code == 200) {
+            offset_keys.date=d.data.offset_keys.date;
+            offset_keys.trade_id=d.data.offset_keys.trade_id;
+        }
+        if (d.data.result_count < 24 || d.meta.code != 200 || d.data.end == 1){
+            $('#load').hide();
+        }else{
+            $('#load_button,#load').show();
+            $('#load_icon').hide();
+        }
+    });
+};
+  </script>
+ </body>
+</html>
