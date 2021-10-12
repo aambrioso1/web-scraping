@@ -37,6 +37,8 @@ The code to generate this file is commented out in the file.
 temp files    
 These files contain the description and images from several different pages.
 
+Note:  robots.txt will give list of permissions.  For example: Robots.txt
+
 **Issues**   
 (1)  Need to settle on a final design.  
 (2)  What functionality will work best.   Create scripts to access this functionality.

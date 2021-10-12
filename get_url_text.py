@@ -1,7 +1,11 @@
-# A script, get_url_text.py to download the html source at a URL to a text file to a folder
-# called url_text
+# get_url_text.py
 
-# Usage get_url_text.py url foldername filename
+"""A script to download the html source at a URL as text file 
+The file will be placed in a folder.
+
+Usage: get_url_text.py url foldername filename
+
+"""
 
 import os, sys, requests, bs4
 
